@@ -1,0 +1,1607 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Krypton.Toolkit.Suite.Extended.Developer.Utilities</name>
+    </assembly>
+    <members>
+        <member name="M:Krypton.Toolkit.Suite.Extended.Developer.Utilities.ApplicationUtilities.DisplayDeveloperInformation(Krypton.Toolkit.KryptonForm,System.Version,System.String,System.Boolean,System.Boolean)">
+            <summary>Displays the developer information.</summary>
+            <param name="window">The window.</param>
+            <param name="applicationVersion">The application version.</param>
+            <param name="developerText">The developer text.</param>
+            <param name="showBuild">if set to <c>true</c> [show build].</param>
+            <param name="showFullVersion">if set to <c>true</c> [show full version].</param>
+        </member>
+        <member name="T:Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExceptionCapture">
+            <summary>For use in try/catch blocks. Uses the standard <see cref="T:Krypton.Toolkit.KryptonMessageBox"/> to display exception messages.</summary>
+        </member>
+        <member name="M:Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExceptionCapture.#ctor">
+            <summary>Initializes a new instance of the <see cref="T:Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExceptionCapture" /> class.</summary>
+        </member>
+        <member name="M:Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExceptionCapture.CaptureException(System.Exception,System.String,System.Windows.Forms.MessageBoxButtons,Krypton.Toolkit.KryptonMessageBoxIcon,System.String,System.String,System.Boolean,System.Boolean)">
+            <summary>
+            Captures the exception.
+            </summary>
+            <param name="exception">The exception.</param>
+            <param name="title">The title.</param>
+            <param name="buttons">The buttons.</param>
+            <param name="icon">The icon.</param>
+            <param name="className">Name of the class.</param>
+            <param name="methodSignature">The method signature.</param>
+            <param name="useDebugConsole">Use the debug console.</param>
+            <param name="dumpException">Dumps the exception data to a file.</param>
+        </member>
+        <member name="M:Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExceptionCapture.CaptureException(System.Exception,Krypton.Toolkit.KryptonForm,System.Windows.Forms.Control,System.String,System.Windows.Forms.MessageBoxButtons,Krypton.Toolkit.KryptonMessageBoxIcon,System.String,System.String)">
+            <summary>Captures the exception.</summary>
+            <param name="exception">The exception.</param>
+            <param name="currentWindow">The current window.</param>
+            <param name="control">The control.</param>
+            <param name="title">The title.</param>
+            <param name="buttons">The buttons.</param>
+            <param name="icon">The icon.</param>
+            <param name="className">Name of the class.</param>
+            <param name="methodSignature">The method signature.</param>
+        </member>
+        <member name="M:Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExceptionCapture.CaptureException(System.String,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Windows.Forms.ToolStripLabel,System.Object,System.String,System.Windows.Forms.MessageBoxButtons,Krypton.Toolkit.KryptonMessageBoxDefaultButton,Krypton.Toolkit.KryptonMessageBoxIcon,System.Windows.Forms.MessageBoxOptions,System.Windows.Forms.MessageBoxIcon,System.Windows.Forms.MessageBoxDefaultButton)">
+            <summary>Captures the exception.</summary>
+            <param name="exceptionMessage">The exception message.</param>
+            <param name="useKryptonMessageBox">if set to <c>true</c> [use krypton message box].</param>
+            <param name="useExtendedKryptonMessageBox">if set to <c>true</c> [use extended krypton message box].</param>
+            <param name="useWin32MessageBox">if set to <c>true</c> [use win32 message box].</param>
+            <param name="useConsole">if set to <c>true</c> [use console].</param>
+            <param name="useToolStripLabel">if set to <c>true</c> [use tool strip label].</param>
+            <param name="toolStripLabel">The tool strip label.</param>
+            <param name="args">The arguments.</param>
+            <param name="caption">The caption.</param>
+            <param name="buttons">The buttons.</param>
+            <param name="defaultButton">The default button.</param>
+            <param name="icon">The icon.</param>
+            <param name="options">The options.</param>
+        </member>
+        <member name="M:Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExceptionCapture.CaptureException(System.String,System.String,System.Windows.Forms.MessageBoxButtons,Krypton.Toolkit.KryptonMessageBoxIcon)">
+            <summary>Captures the exception.</summary>
+            <param name="exceptionMessage">The exception message.</param>
+            <param name="title">The title.</param>
+            <param name="buttons">The buttons.</param>
+            <param name="icon">The icon.</param>
+        </member>
+        <member name="M:Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExceptionCapture.PrintExceptionStackTrace(System.Exception,System.String)">
+            <summary>
+            Captures a stacktrace of the exception.
+            </summary>
+            <param name="exc">The incoming exception.</param>
+            <param name="fileName">The file to write the exception stacktrace to.</param>
+        </member>
+        <member name="M:Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExceptionCapture.Finalize">
+            <summary>Finalizes an instance of the <see cref="T:Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExceptionCapture" /> class.</summary>
+        </member>
+        <member name="P:Krypton.Toolkit.Suite.Extended.Developer.Utilities.KryptonMessageBoxExtended.HelpInformation.HelpFilePath">
+            <summary>
+            Gets the HelpFilePath property.
+            </summary>
+        </member>
+        <member name="P:Krypton.Toolkit.Suite.Extended.Developer.Utilities.KryptonMessageBoxExtended.HelpInformation.Keyword">
+            <summary>
+            Gets the Keyword property.
+            </summary>
+        </member>
+        <member name="P:Krypton.Toolkit.Suite.Extended.Developer.Utilities.KryptonMessageBoxExtended.HelpInformation.Navigator">
+            <summary>
+            Gets the Navigator property.
+            </summary>
+        </member>
+        <member name="P:Krypton.Toolkit.Suite.Extended.Developer.Utilities.KryptonMessageBoxExtended.HelpInformation.Param">
+            <summary>
+            Gets the Param property.
+            </summary>
+        </member>
+        <member name="M:Krypton.Toolkit.Suite.Extended.Developer.Utilities.KryptonMessageBoxExtended.HelpInformation.#ctor">
+            <summary>
+            Initialize a new instance of the HelpInformation class.
+            </summary>
+        </member>
+        <member name="M:Krypton.Toolkit.Suite.Extended.Developer.Utilities.KryptonMessageBoxExtended.HelpInformation.#ctor(System.String)">
+            <summary>
+            Initialize a new instance of the HelpInformation class.
+            </summary>
+            <param name="helpFilePath">Value for HelpFilePath.</param>
+        </member>
+        <member name="M:Krypton.Toolkit.Suite.Extended.Developer.Utilities.KryptonMessageBoxExtended.HelpInformation.#ctor(System.String,System.String)">
+            <summary>
+            Initialize a new instance of the HelpInformation class.
+            </summary>
+            <param name="helpFilePath">Value for HelpFilePath.</param>
+            <param name="keyword">Value for Keyword</param>
+        </member>
+        <member name="M:Krypton.Toolkit.Suite.Extended.Developer.Utilities.KryptonMessageBoxExtended.HelpInformation.#ctor(System.String,System.Windows.Forms.HelpNavigator)">
+            <summary>
+            Initialize a new instance of the HelpInformation class.
+            </summary>
+            <param name="helpFilePath">Value for HelpFilePath.</param>
+            <param name="navigator">Value for Navigator</param>
+        </member>
+        <member name="M:Krypton.Toolkit.Suite.Extended.Developer.Utilities.KryptonMessageBoxExtended.HelpInformation.#ctor(System.String,System.Windows.Forms.HelpNavigator,System.Object)">
+            <summary>
+            Initialize a new instance of the HelpInformation class.
+            </summary>
+            <param name="helpFilePath">Value for HelpFilePath.</param>
+            <param name="navigator">Value for Navigator</param>
+            <param name="param">Value for Param</param>
+        </member>
+        <member name="P:Krypton.Toolkit.Suite.Extended.Developer.Utilities.KryptonMessageBoxExtended.MessageButton.IgnoreAltF4">
+            <summary>
+            Gets and sets the ignoring of Alt+F4
+            </summary>
+        </member>
+        <member name="M:Krypton.Toolkit.Suite.Extended.Developer.Utilities.KryptonMessageBoxExtended.MessageButton.WndProc(System.Windows.Forms.Message@)">
+            <summary>
+            Processes Windows messages.
+            </summary>
+            <param name="m">The Windows Message to process. </param>
+        </member>
+        <member name="M:Krypton.Toolkit.Suite.Extended.Developer.Utilities.KryptonMessageBoxExtended.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Krypton.Toolkit.Suite.Extended.Developer.Utilities.KryptonMessageBoxExtended" /> class.
+            A dummy constructor to retrieve the optional check box value.
+            </summary>
+        </member>
+        <member name="M:Krypton.Toolkit.Suite.Extended.Developer.Utilities.KryptonMessageBoxExtended.#ctor(System.Windows.Forms.IWin32Window,System.String,System.String,Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExtendedMessageBoxButtons,System.Nullable{Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExtendedMessageBoxCustomButtonOptions},Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExtendedMessageBoxIcon,System.Windows.Forms.MessageBoxDefaultButton,System.Windows.Forms.MessageBoxOptions,Krypton.Toolkit.Suite.Extended.Developer.Utilities.KryptonMessageBoxExtended.HelpInformation,System.Nullable{System.Boolean},System.Drawing.Font,System.Boolean,System.String,System.Boolean,System.Nullable{System.Windows.Forms.CheckState},System.Nullable{System.Windows.Forms.AnchorStyles},System.Nullable{System.Drawing.Point},System.Drawing.Image,System.Boolean,System.String,System.Nullable{System.Boolean},System.Nullable{System.Int32},System.String,System.String,System.String,System.Nullable{System.Windows.Forms.DialogResult},System.Nullable{System.Windows.Forms.DialogResult},System.Nullable{System.Windows.Forms.DialogResult},System.Nullable{System.Boolean})">
+            <summary>Initializes a new instance of the <see cref="T:Krypton.Toolkit.Suite.Extended.Developer.Utilities.KryptonMessageBoxExtended" /> class.</summary>
+            <param name="showOwner">The show owner.</param>
+            <param name="text">The text.</param>
+            <param name="caption">The caption.</param>
+            <param name="buttons">The buttons.</param>
+            <param name="customButtonOptions">Custom button options.</param>
+            <param name="icon">The icon.</param>
+            <param name="defaultButton">The default button.</param>
+            <param name="options">The options.</param>
+            <param name="helpInformation">The help information.</param>
+            <param name="showCtrlCopy">The show control copy.</param>
+            <param name="messageboxTypeface">The message box typeface.</param>
+            <param name="showOptionalCheckBox">if set to <c>true</c> [show optional CheckBox].</param>
+            <param name="optionalCheckBoxText">The optional CheckBox text.</param>
+            <param name="isOptionalCheckBoxChecked">if set to <c>true</c> [is optional CheckBox checked].</param>
+            <param name="optionalCheckBoxCheckState">The check state of the optional check box.</param>
+            <param name="optionalCheckBoxAnchor">The optional CheckBox anchor.</param>
+            <param name="optionalCheckBoxLocation">The optional CheckBox location.</param>
+            <param name="customMessageBoxIcon">The custom message box icon.</param>
+            <param name="showCopyButton">if set to <c>true</c> [show copy button].</param>
+            <param name="copyButtonText">The copy button text.</param>
+            <param name="fade">Allows the message box to fade in and out.</param>
+            <param name="fadeSleepTimer">The speed of the fading effect.</param>
+            <param name="buttonOneCustomText">The custom text on the first button.</param>
+            <param name="buttonTwoCustomText">The custom text on the second button.</param>
+            <param name="buttonThreeCustomText">The custom text on the third button.</param>
+            <param name="buttonOneCustomDialogResult">The action for the first button to take.</param>
+            <param name="buttonTwoCustomDialogResult">The action for the second button to take.</param>
+            <param name="buttonThreeCustomDialogResult">The action for the third button to take.</param>
+        </member>
+        <member name="M:Krypton.Toolkit.Suite.Extended.Developer.Utilities.KryptonMessageBoxExtended.Dispose(System.Boolean)">
+            <summary>
+            Releases unmanaged and - optionally - managed resources.
+            </summary>
+            <param name="disposing"><c>true</c> to release both managed and unmanaged resources; <c>false</c> to release only unmanaged resources.</param>
+        </member>
+        <member name="M:Krypton.Toolkit.Suite.Extended.Developer.Utilities.KryptonMessageBoxExtended.Show(System.String,System.Nullable{System.Boolean},System.Drawing.Font,System.Boolean,System.String,System.Boolean,System.Nullable{System.Windows.Forms.CheckState},System.Nullable{System.Windows.Forms.AnchorStyles},System.Nullable{System.Drawing.Point},System.Boolean,System.String,System.Nullable{System.Boolean},System.Nullable{System.Int32})">
+            <summary>
+            Displays a message box with specified text.
+            </summary>
+            <param name="text">The text to display in the message box.</param>
+            <param name="showCtrlCopy">Show extraText in title. If null(default) then only when Warning or Error icon is used.</param>
+            <param name="messageboxTypeface">The message box typeface. (Can be null)</param>
+            <param name="showOptionalCheckBox">Shows an optional check box in the footer of the <see cref="T:Krypton.Toolkit.Suite.Extended.Developer.Utilities.KryptonMessageBoxExtended"/>.</param>
+            <param name="optionalCheckBoxText">The text shown on the optional check box.</param>
+            <param name="isOptionalCheckBoxChecked">Is the optional check box already checked.</param>
+            <param name="optionalCheckBoxCheckState">The check state of the optional check box.</param>
+            <param name="optionalCheckBoxAnchor">The <see cref="T:System.Windows.Forms.AnchorStyles"/> of the optional check box. (Always keep it to the left.)</param>
+            <param name="optionalCheckBoxLocation">The location of the optional check box.</param>
+            <param name="showCopyButton">Shows an optional copy button, to copy the message box content text to the Windows clipboard.</param>
+            <param name="copyButtonText">The text shown on the copy button.</param>
+            <param name="fade">Allows the message box to fade in and out.</param>
+            <param name="fadeSleepTimer">The speed of the fading effect.</param>
+            <returns>One of the System.Windows.Forms.DialogResult values.</returns>
+        </member>
+        <member name="M:Krypton.Toolkit.Suite.Extended.Developer.Utilities.KryptonMessageBoxExtended.Show(System.Windows.Forms.IWin32Window,System.String,System.Nullable{System.Boolean},System.Drawing.Font,System.Boolean,System.String,System.Boolean,System.Nullable{System.Windows.Forms.CheckState},System.Nullable{System.Windows.Forms.AnchorStyles},System.Nullable{System.Drawing.Point},System.Boolean,System.String,System.Nullable{System.Boolean},System.Nullable{System.Int32})">
+            <summary>
+            Displays a message box in front of the specified object and with the specified text.
+            </summary>
+            <param name="owner">Owner of the modal dialog box.</param>
+            <param name="text">The text to display in the message box.</param>
+            <param name="showCtrlCopy">Show extraText in title. If null(default) then only when Warning or Error icon is used.</param>
+            <param name="messageboxTypeface">The message box typeface. (Can be null)</param>
+            <param name="showOptionalCheckBox">Shows an optional check box in the footer of the <see cref="T:Krypton.Toolkit.Suite.Extended.Developer.Utilities.KryptonMessageBoxExtended"/>.</param>
+            <param name="optionalCheckBoxText">The text shown on the optional check box.</param>
+            <param name="isOptionalCheckBoxChecked">Is the optional check box already checked.</param>
+            <param name="optionalCheckBoxCheckState">The check state of the optional check box.</param>
+            <param name="optionalCheckBoxAnchor">The <see cref="T:System.Windows.Forms.AnchorStyles"/> of the optional check box. (Always keep it to the left.)</param>
+            <param name="optionalCheckBoxLocation">The location of the optional check box.</param>
+            <param name="showCopyButton">Shows an optional copy button, to copy the message box content text to the Windows clipboard.</param>
+            <param name="copyButtonText">The text shown on the copy button.</param>
+            <param name="fade">Allows the message box to fade in and out.</param>
+            <param name="fadeSleepTimer">The speed of the fading effect.</param>
+            <returns>One of the System.Windows.Forms.DialogResult values.</returns>
+        </member>
+        <member name="M:Krypton.Toolkit.Suite.Extended.Developer.Utilities.KryptonMessageBoxExtended.Show(System.String,System.String,System.Nullable{System.Boolean},System.Drawing.Font,System.Boolean,System.String,System.Boolean,System.Nullable{System.Windows.Forms.CheckState},System.Nullable{System.Windows.Forms.AnchorStyles},System.Nullable{System.Drawing.Point},System.Boolean,System.String,System.Nullable{System.Boolean},System.Nullable{System.Int32})">
+            <summary>
+            Displays a message box with specified text and caption.
+            </summary>
+            <param name="text">The text to display in the message box.</param>
+            <param name="caption">The text to display in the title bar of the message box.</param>
+            <param name="showCtrlCopy">Show extraText in title. If null(default) then only when Warning or Error icon is used.</param>
+            <param name="messageboxTypeface">The message box typeface. (Can be null)</param>
+            <param name="showOptionalCheckBox">Shows an optional check box in the footer of the <see cref="T:Krypton.Toolkit.Suite.Extended.Developer.Utilities.KryptonMessageBoxExtended"/>.</param>
+            <param name="optionalCheckBoxText">The text shown on the optional check box.</param>
+            <param name="isOptionalCheckBoxChecked">Is the optional check box already checked.</param>
+            <param name="optionalCheckBoxCheckState">The check state of the optional check box.</param>
+            <param name="optionalCheckBoxAnchor">The <see cref="T:System.Windows.Forms.AnchorStyles"/> of the optional check box. (Always keep it to the left.)</param>
+            <param name="optionalCheckBoxLocation">The location of the optional check box.</param>
+            <param name="showCopyButton">Shows an optional copy button, to copy the message box content text to the Windows clipboard.</param>
+            <param name="copyButtonText">The text shown on the copy button.</param>
+            <param name="fade">Allows the message box to fade in and out.</param>
+            <param name="fadeSleepTimer">The speed of the fading effect.</param>
+            <returns>One of the System.Windows.Forms.DialogResult values.</returns>
+        </member>
+        <member name="M:Krypton.Toolkit.Suite.Extended.Developer.Utilities.KryptonMessageBoxExtended.Show(System.Windows.Forms.IWin32Window,System.String,System.String,System.Nullable{System.Boolean},System.Drawing.Font,System.Boolean,System.String,System.Boolean,System.Nullable{System.Windows.Forms.CheckState},System.Nullable{System.Windows.Forms.AnchorStyles},System.Nullable{System.Drawing.Point},System.Boolean,System.String,System.Nullable{System.Boolean},System.Nullable{System.Int32})">
+            <summary>
+            Displays a message box in front of the specified object and with the specified text and caption.
+            </summary>
+            <param name="owner">Owner of the modal dialog box.</param>
+            <param name="text">The text to display in the message box.</param>
+            <param name="caption">The text to display in the title bar of the message box.</param>
+            <param name="showCtrlCopy">Show extraText in title. If null(default) then only when Warning or Error icon is used.</param>
+            <param name="messageboxTypeface">The message box typeface. (Can be null)</param>
+            <param name="showOptionalCheckBox">Shows an optional check box in the footer of the <see cref="T:Krypton.Toolkit.Suite.Extended.Developer.Utilities.KryptonMessageBoxExtended"/>.</param>
+            <param name="optionalCheckBoxText">The text shown on the optional check box.</param>
+            <param name="isOptionalCheckBoxChecked">Is the optional check box already checked.</param>
+            <param name="optionalCheckBoxCheckState">The check state of the optional check box.</param>
+            <param name="optionalCheckBoxAnchor">The <see cref="T:System.Windows.Forms.AnchorStyles"/> of the optional check box. (Always keep it to the left.)</param>
+            <param name="optionalCheckBoxLocation">The location of the optional check box.</param>
+            <param name="showCopyButton">Shows an optional copy button, to copy the message box content text to the Windows clipboard.</param>
+            <param name="copyButtonText">The text shown on the copy button.</param>
+            <param name="fade">Allows the message box to fade in and out.</param>
+            <param name="fadeSleepTimer">The speed of the fading effect.</param>
+            <returns>One of the System.Windows.Forms.DialogResult values.</returns>
+        </member>
+        <member name="M:Krypton.Toolkit.Suite.Extended.Developer.Utilities.KryptonMessageBoxExtended.Show(System.String,System.String,Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExtendedMessageBoxButtons,Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExtendedMessageBoxCustomButtonOptions,System.Nullable{System.Boolean},System.Drawing.Font,System.Boolean,System.String,System.Boolean,System.Nullable{System.Windows.Forms.CheckState},System.Nullable{System.Windows.Forms.AnchorStyles},System.Nullable{System.Drawing.Point},System.Boolean,System.String,System.Nullable{System.Boolean},System.Nullable{System.Int32},System.String,System.String,System.String,System.Nullable{System.Windows.Forms.DialogResult},System.Nullable{System.Windows.Forms.DialogResult},System.Nullable{System.Windows.Forms.DialogResult})">
+            <summary>
+            Displays a message box with specified text, caption, and buttons.
+            </summary>
+            <param name="text">The text to display in the message box.</param>
+            <param name="caption">The text to display in the title bar of the message box.</param>
+            <param name="buttons">One of the System.Windows.Forms.ExtendedMessageBoxButton values that specifies which buttons to display in the message box.</param>
+            <param name="customButtonOptions">Custom button options.</param>
+            <param name="showCtrlCopy">Show extraText in title. If null(default) then only when Warning or Error icon is used.</param>
+            <param name="messageboxTypeface">The message box typeface. (Can be null)</param>
+            <param name="showOptionalCheckBox">Shows an optional check box in the footer of the <see cref="T:Krypton.Toolkit.Suite.Extended.Developer.Utilities.KryptonMessageBoxExtended"/>.</param>
+            <param name="optionalCheckBoxText">The text shown on the optional check box.</param>
+            <param name="isOptionalCheckBoxChecked">Is the optional check box already checked.</param>
+            <param name="optionalCheckBoxCheckState">The check state of the optional check box.</param>
+            <param name="optionalCheckBoxAnchor">The <see cref="T:System.Windows.Forms.AnchorStyles"/> of the optional check box. (Always keep it to the left.)</param>
+            <param name="optionalCheckBoxLocation">The location of the optional check box.</param>
+            <param name="showCopyButton">Shows an optional copy button, to copy the message box content text to the Windows clipboard.</param>
+            <param name="copyButtonText">The text shown on the copy button.</param>
+            <param name="fade">Allows the message box to fade in and out.</param>
+            <param name="fadeSleepTimer">The speed of the fading effect.</param>
+            <param name="buttonOneCustomText">The custom text on the first button.</param>
+            <param name="buttonTwoCustomText">The custom text on the second button.</param>
+            <param name="buttonThreeCustomText">The custom text on the third button.</param>
+            <param name="buttonOneCustomDialogResult">The action for the first button to take.</param>
+            <param name="buttonTwoCustomDialogResult">The action for the second button to take.</param>
+            <param name="buttonThreeCustomDialogResult">The action for the third button to take.</param>
+            <returns>One of the System.Windows.Forms.DialogResult values.</returns>
+        </member>
+        <member name="M:Krypton.Toolkit.Suite.Extended.Developer.Utilities.KryptonMessageBoxExtended.Show(System.Windows.Forms.IWin32Window,System.String,System.String,Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExtendedMessageBoxButtons,Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExtendedMessageBoxCustomButtonOptions,System.Nullable{System.Boolean},System.Drawing.Font,System.Boolean,System.String,System.Boolean,System.Nullable{System.Windows.Forms.CheckState},System.Nullable{System.Windows.Forms.AnchorStyles},System.Nullable{System.Drawing.Point},System.Boolean,System.String,System.Nullable{System.Boolean},System.Nullable{System.Int32},System.String,System.String,System.String,System.Nullable{System.Windows.Forms.DialogResult},System.Nullable{System.Windows.Forms.DialogResult},System.Nullable{System.Windows.Forms.DialogResult})">
+            <summary>
+            Displays a message box in front of the specified object and with the specified text, caption, and buttons.
+            </summary>
+            <param name="owner">Owner of the modal dialog box.</param>
+            <param name="text">The text to display in the message box.</param>
+            <param name="caption">The text to display in the title bar of the message box.</param>
+            <param name="buttons">One of the System.Windows.Forms.ExtendedMessageBoxButton values that specifies which buttons to display in the message box.</param>
+            <param name="customButtonOptions">Custom button options.</param>
+            <param name="showCtrlCopy">Show extraText in title. If null(default) then only when Warning or Error icon is used.</param>
+            <param name="messageboxTypeface">The message box typeface. (Can be null)</param>
+            <param name="showOptionalCheckBox">Shows an optional check box in the footer of the <see cref="T:Krypton.Toolkit.Suite.Extended.Developer.Utilities.KryptonMessageBoxExtended"/>.</param>
+            <param name="optionalCheckBoxText">The text shown on the optional check box.</param>
+            <param name="isOptionalCheckBoxChecked">Is the optional check box already checked.</param>
+            <param name="optionalCheckBoxCheckState">The check state of the optional check box.</param>
+            <param name="optionalCheckBoxAnchor">The <see cref="T:System.Windows.Forms.AnchorStyles"/> of the optional check box. (Always keep it to the left.)</param>
+            <param name="optionalCheckBoxLocation">The location of the optional check box.</param>
+            <param name="showCopyButton">Shows an optional copy button, to copy the message box content text to the Windows clipboard.</param>
+            <param name="copyButtonText">The text shown on the copy button.</param>
+            <param name="fade">Allows the message box to fade in and out.</param>
+            <param name="fadeSleepTimer">The speed of the fading effect.</param>
+            <param name="buttonOneCustomText">The custom text on the first button.</param>
+            <param name="buttonTwoCustomText">The custom text on the second button.</param>
+            <param name="buttonThreeCustomText">The custom text on the third button.</param>
+            <param name="buttonOneCustomDialogResult">The action for the first button to take.</param>
+            <param name="buttonTwoCustomDialogResult">The action for the second button to take.</param>
+            <param name="buttonThreeCustomDialogResult">The action for the third button to take.</param>
+            <returns>One of the System.Windows.Forms.DialogResult values.</returns>
+        </member>
+        <member name="M:Krypton.Toolkit.Suite.Extended.Developer.Utilities.KryptonMessageBoxExtended.Show(System.String,System.String,Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExtendedMessageBoxButtons,Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExtendedMessageBoxCustomButtonOptions,Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExtendedMessageBoxIcon,System.Nullable{System.Boolean},System.Drawing.Font,System.Boolean,System.String,System.Boolean,System.Nullable{System.Windows.Forms.CheckState},System.Nullable{System.Windows.Forms.AnchorStyles},System.Nullable{System.Drawing.Point},System.Drawing.Image,System.Boolean,System.String,System.Nullable{System.Boolean},System.Nullable{System.Int32},System.String,System.String,System.String,System.Nullable{System.Windows.Forms.DialogResult},System.Nullable{System.Windows.Forms.DialogResult},System.Nullable{System.Windows.Forms.DialogResult})">
+            <summary>
+            Displays a message box with specified text, caption, buttons, and icon.
+            </summary>
+            <param name="text">The text to display in the message box.</param>
+            <param name="caption">The text to display in the title bar of the message box.</param>
+            <param name="buttons">One of the System.Windows.Forms.ExtendedMessageBoxButton values that specifies which buttons to display in the message box.</param>
+            <param name="customButtonOptions">Custom button options.</param>
+            <param name="icon">One of the System.Windows.Forms.ExtendedMessageBoxIcon values that specifies which icon to display in the message box.</param>
+            <param name="showCtrlCopy">Show extraText in title. If null(default) then only when Warning or Error icon is used.</param>
+            <param name="messageboxTypeface">The message box typeface. (Can be null)</param>
+            <param name="showOptionalCheckBox">Shows an optional check box in the footer of the <see cref="T:Krypton.Toolkit.Suite.Extended.Developer.Utilities.KryptonMessageBoxExtended"/>.</param>
+            <param name="optionalCheckBoxText">The text shown on the optional check box.</param>
+            <param name="isOptionalCheckBoxChecked">Is the optional check box already checked.</param>
+            <param name="optionalCheckBoxCheckState">The check state of the optional check box.</param>
+            <param name="optionalCheckBoxAnchor">The <see cref="T:System.Windows.Forms.AnchorStyles"/> of the optional check box. (Always keep it to the left.)</param>
+            <param name="optionalCheckBoxLocation">The location of the optional check box.</param>
+            <param name="customMessageBoxIcon">Set a custom message box icon. (Must be at least a 32 x 32 PNG image.)</param>
+            <param name="showCopyButton">Shows an optional copy button, to copy the message box content text to the Windows clipboard.</param>
+            <param name="copyButtonText">The text shown on the copy button.</param>
+            <param name="fade">Allows the message box to fade in and out.</param>
+            <param name="fadeSleepTimer">The speed of the fading effect.</param>
+            <param name="buttonOneCustomText">The custom text on the first button.</param>
+            <param name="buttonTwoCustomText">The custom text on the second button.</param>
+            <param name="buttonThreeCustomText">The custom text on the third button.</param>
+            <param name="buttonOneCustomDialogResult">The action for the first button to take.</param>
+            <param name="buttonTwoCustomDialogResult">The action for the second button to take.</param>
+            <param name="buttonThreeCustomDialogResult">The action for the third button to take.</param>
+            <returns>One of the System.Windows.Forms.DialogResult values.</returns>
+        </member>
+        <member name="M:Krypton.Toolkit.Suite.Extended.Developer.Utilities.KryptonMessageBoxExtended.Show(System.Windows.Forms.IWin32Window,System.String,System.String,Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExtendedMessageBoxButtons,Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExtendedMessageBoxCustomButtonOptions,Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExtendedMessageBoxIcon,System.Nullable{System.Boolean},System.Drawing.Font,System.Boolean,System.String,System.Boolean,System.Nullable{System.Windows.Forms.CheckState},System.Nullable{System.Windows.Forms.AnchorStyles},System.Nullable{System.Drawing.Point},System.Drawing.Image,System.Boolean,System.String,System.Nullable{System.Boolean},System.Nullable{System.Int32},System.String,System.String,System.String,System.Nullable{System.Windows.Forms.DialogResult},System.Nullable{System.Windows.Forms.DialogResult},System.Nullable{System.Windows.Forms.DialogResult})">
+            <summary>
+            Displays a message box in front of the specified object and with the specified text, caption, buttons, and icon.
+            </summary>
+            <param name="owner">Owner of the modal dialog box.</param>
+            <param name="text">The text to display in the message box.</param>
+            <param name="caption">The text to display in the title bar of the message box.</param>
+            <param name="buttons">One of the System.Windows.Forms.ExtendedMessageBoxButton values that specifies which buttons to display in the message box.</param>
+            <param name="customButtonOptions">Custom button options.</param>
+            <param name="icon">One of the System.Windows.Forms.ExtendedMessageBoxIcon values that specifies which icon to display in the message box.</param>
+            <param name="showCtrlCopy">Show extraText in title. If null(default) then only when Warning or Error icon is used.</param>
+            <param name="messageboxTypeface">The message box typeface. (Can be null)</param>
+            <param name="showOptionalCheckBox">Shows an optional check box in the footer of the <see cref="T:Krypton.Toolkit.Suite.Extended.Developer.Utilities.KryptonMessageBoxExtended"/>.</param>
+            <param name="optionalCheckBoxText">The text shown on the optional check box.</param>
+            <param name="isOptionalCheckBoxChecked">Is the optional check box already checked.</param>
+            <param name="optionalCheckBoxCheckState">The check state of the optional check box.</param>
+            <param name="optionalCheckBoxAnchor">The <see cref="T:System.Windows.Forms.AnchorStyles"/> of the optional check box. (Always keep it to the left.)</param>
+            <param name="optionalCheckBoxLocation">The location of the optional check box.</param>
+            <param name="customMessageBoxIcon">Set a custom message box icon. (Must be at least a 32 x 32 PNG image.)</param>
+            <param name="showCopyButton">Shows an optional copy button, to copy the message box content text to the Windows clipboard.</param>
+            <param name="copyButtonText">The text shown on the copy button.</param>
+            <param name="fade">Allows the message box to fade in and out.</param>
+            <param name="fadeSleepTimer">The speed of the fading effect.</param>
+            <param name="buttonOneCustomText">The custom text on the first button.</param>
+            <param name="buttonTwoCustomText">The custom text on the second button.</param>
+            <param name="buttonThreeCustomText">The custom text on the third button.</param>
+            <param name="buttonOneCustomDialogResult">The action for the first button to take.</param>
+            <param name="buttonTwoCustomDialogResult">The action for the second button to take.</param>
+            <param name="buttonThreeCustomDialogResult">The action for the third button to take.</param>
+            <returns>One of the System.Windows.Forms.DialogResult values.</returns>
+        </member>
+        <member name="M:Krypton.Toolkit.Suite.Extended.Developer.Utilities.KryptonMessageBoxExtended.Show(System.String,System.String,Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExtendedMessageBoxButtons,Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExtendedMessageBoxCustomButtonOptions,Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExtendedMessageBoxIcon,System.Windows.Forms.MessageBoxDefaultButton,System.Nullable{System.Boolean},System.Drawing.Font,System.Boolean,System.String,System.Boolean,System.Nullable{System.Windows.Forms.CheckState},System.Nullable{System.Windows.Forms.AnchorStyles},System.Nullable{System.Drawing.Point},System.Drawing.Image,System.Boolean,System.String,System.Nullable{System.Boolean},System.Nullable{System.Int32},System.String,System.String,System.String,System.Nullable{System.Windows.Forms.DialogResult},System.Nullable{System.Windows.Forms.DialogResult},System.Nullable{System.Windows.Forms.DialogResult})">
+            <summary>
+            Displays a message box with the specified text, caption, buttons, icon, and default button.
+            </summary>
+            <param name="text">The text to display in the message box.</param>
+            <param name="caption">The text to display in the title bar of the message box.</param>
+            <param name="buttons">One of the System.Windows.Forms.ExtendedMessageBoxButton values that specifies which buttons to display in the message box.</param>
+            <param name="customButtonOptions">Custom button options.</param>
+            <param name="icon">One of the System.Windows.Forms.ExtendedMessageBoxIcon values that specifies which icon to display in the message box.</param>
+            <param name="defaultButton">One of the System.Windows.Forms.MessageBoxDefaultButton values that specifies the default button for the message box.</param>
+            <param name="showCtrlCopy">Show extraText in title. If null(default) then only when Warning or Error icon is used.</param>
+            <param name="messageboxTypeface">The message box typeface. (Can be null)</param>
+            <param name="showOptionalCheckBox">Shows an optional check box in the footer of the <see cref="T:Krypton.Toolkit.Suite.Extended.Developer.Utilities.KryptonMessageBoxExtended"/>.</param>
+            <param name="optionalCheckBoxText">The text shown on the optional check box.</param>
+            <param name="isOptionalCheckBoxChecked">Is the optional check box already checked.</param>
+            <param name="optionalCheckBoxCheckState">The check state of the optional check box.</param>
+            <param name="optionalCheckBoxAnchor">The <see cref="T:System.Windows.Forms.AnchorStyles"/> of the optional check box. (Always keep it to the left.)</param>
+            <param name="optionalCheckBoxLocation">The location of the optional check box.</param>
+            <param name="customMessageBoxIcon">Set a custom message box icon. (Must be at least a 32 x 32 PNG image.)</param>
+            <param name="showCopyButton">Shows an optional copy button, to copy the message box content text to the Windows clipboard.</param>
+            <param name="copyButtonText">The text shown on the copy button.</param>
+            <param name="fade">Allows the message box to fade in and out.</param>
+            <param name="fadeSleepTimer">The speed of the fading effect.</param>
+            <param name="buttonOneCustomText">The custom text on the first button.</param>
+            <param name="buttonTwoCustomText">The custom text on the second button.</param>
+            <param name="buttonThreeCustomText">The custom text on the third button.</param>
+            <param name="buttonOneCustomDialogResult">The action for the first button to take.</param>
+            <param name="buttonTwoCustomDialogResult">The action for the second button to take.</param>
+            <param name="buttonThreeCustomDialogResult">The action for the third button to take.</param>
+            <returns>One of the System.Windows.Forms.DialogResult values.</returns>
+        </member>
+        <member name="M:Krypton.Toolkit.Suite.Extended.Developer.Utilities.KryptonMessageBoxExtended.Show(System.Windows.Forms.IWin32Window,System.String,System.String,Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExtendedMessageBoxButtons,Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExtendedMessageBoxCustomButtonOptions,Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExtendedMessageBoxIcon,System.Windows.Forms.MessageBoxDefaultButton,System.Nullable{System.Boolean},System.Drawing.Font,System.Boolean,System.String,System.Boolean,System.Nullable{System.Windows.Forms.CheckState},System.Nullable{System.Windows.Forms.AnchorStyles},System.Nullable{System.Drawing.Point},System.Drawing.Image,System.Boolean,System.String,System.Nullable{System.Boolean},System.Nullable{System.Int32},System.String,System.String,System.String,System.Nullable{System.Windows.Forms.DialogResult},System.Nullable{System.Windows.Forms.DialogResult},System.Nullable{System.Windows.Forms.DialogResult})">
+            <summary>
+            Displays a message box in front of the specified object and with the specified text, caption, buttons, icon, and default button.
+            </summary>
+            <param name="owner">Owner of the modal dialog box.</param>
+            <param name="text">The text to display in the message box.</param>
+            <param name="caption">The text to display in the title bar of the message box.</param>
+            <param name="buttons">One of the System.Windows.Forms.ExtendedMessageBoxButton values that specifies which buttons to display in the message box.</param>
+            <param name="customButtonOptions">Custom button options.</param>
+            <param name="icon">One of the System.Windows.Forms.ExtendedMessageBoxIcon values that specifies which icon to display in the message box.</param>
+            <param name="defaultButton">One of the System.Windows.Forms.MessageBoxDefaultButton values that specifies the default button for the message box.</param>
+            <param name="showCtrlCopy">Show extraText in title. If null(default) then only when Warning or Error icon is used.</param>
+            <param name="messageboxTypeface">The message box typeface. (Can be null)</param>
+            <param name="showOptionalCheckBox">Shows an optional check box in the footer of the <see cref="T:Krypton.Toolkit.Suite.Extended.Developer.Utilities.KryptonMessageBoxExtended"/>.</param>
+            <param name="optionalCheckBoxText">The text shown on the optional check box.</param>
+            <param name="isOptionalCheckBoxChecked">Is the optional check box already checked.</param>
+            <param name="optionalCheckBoxCheckState">The check state of the optional check box.</param>
+            <param name="optionalCheckBoxAnchor">The <see cref="T:System.Windows.Forms.AnchorStyles"/> of the optional check box. (Always keep it to the left.)</param>
+            <param name="optionalCheckBoxLocation">The location of the optional check box.</param>
+            <param name="customMessageBoxIcon">Set a custom message box icon. (Must be at least a 32 x 32 PNG image.)</param>
+            <param name="showCopyButton">Shows an optional copy button, to copy the message box content text to the Windows clipboard.</param>
+            <param name="copyButtonText">The text shown on the copy button.</param>
+            <param name="fade">Allows the message box to fade in and out.</param>
+            <param name="fadeSleepTimer">The speed of the fading effect.</param>
+            <param name="buttonOneCustomText">The custom text on the first button.</param>
+            <param name="buttonTwoCustomText">The custom text on the second button.</param>
+            <param name="buttonThreeCustomText">The custom text on the third button.</param>
+            <param name="buttonOneCustomDialogResult">The action for the first button to take.</param>
+            <param name="buttonTwoCustomDialogResult">The action for the second button to take.</param>
+            <param name="buttonThreeCustomDialogResult">The action for the third button to take.</param>
+            <returns>One of the System.Windows.Forms.DialogResult values.</returns>
+        </member>
+        <member name="M:Krypton.Toolkit.Suite.Extended.Developer.Utilities.KryptonMessageBoxExtended.Show(System.String,System.String,Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExtendedMessageBoxButtons,Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExtendedMessageBoxCustomButtonOptions,Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExtendedMessageBoxIcon,System.Windows.Forms.MessageBoxDefaultButton,System.Windows.Forms.MessageBoxOptions,System.Nullable{System.Boolean},System.Drawing.Font,System.Boolean,System.String,System.Boolean,System.Nullable{System.Windows.Forms.CheckState},System.Nullable{System.Windows.Forms.AnchorStyles},System.Nullable{System.Drawing.Point},System.Drawing.Image,System.Boolean,System.String,System.Nullable{System.Boolean},System.Nullable{System.Int32},System.String,System.String,System.String,System.Nullable{System.Windows.Forms.DialogResult},System.Nullable{System.Windows.Forms.DialogResult},System.Nullable{System.Windows.Forms.DialogResult})">
+            <summary>
+            Displays a message box with the specified text, caption, buttons, icon, default button, and options.
+            </summary>
+            <param name="text">The text to display in the message box.</param>
+            <param name="caption">The text to display in the title bar of the message box.</param>
+            <param name="buttons">One of the System.Windows.Forms.ExtendedMessageBoxButton values that specifies which buttons to display in the message box.</param>
+            <param name="customButtonOptions">Custom button options.</param>
+            <param name="icon">One of the System.Windows.Forms.ExtendedMessageBoxIcon values that specifies which icon to display in the message box.</param>
+            <param name="defaultButton">One of the System.Windows.Forms.MessageBoxDefaultButton values that specifies the default button for the message box.</param>
+            <param name="options">One of the System.Windows.Forms.MessageBoxOptions values that specifies which display and association options will be used for the message box. You may pass in 0 if you wish to use the defaults.</param>
+            <param name="showCtrlCopy">Show extraText in title. If null(default) then only when Warning or Error icon is used.</param>
+            <param name="messageboxTypeface">The message box typeface. (Can be null)</param>
+            <param name="showOptionalCheckBox">Shows an optional check box in the footer of the <see cref="T:Krypton.Toolkit.Suite.Extended.Developer.Utilities.KryptonMessageBoxExtended"/>.</param>
+            <param name="optionalCheckBoxText">The text shown on the optional check box.</param>
+            <param name="isOptionalCheckBoxChecked">Is the optional check box already checked.</param>
+            <param name="optionalCheckBoxCheckState">The check state of the optional check box.</param>
+            <param name="optionalCheckBoxAnchor">The <see cref="T:System.Windows.Forms.AnchorStyles"/> of the optional check box. (Always keep it to the left.)</param>
+            <param name="optionalCheckBoxLocation">The location of the optional check box.</param>
+            <param name="customMessageBoxIcon">Set a custom message box icon. (Must be at least a 32 x 32 PNG image.)</param>
+            <param name="showCopyButton">Shows an optional copy button, to copy the message box content text to the Windows clipboard.</param>
+            <param name="copyButtonText">The text shown on the copy button.</param>
+            <param name="fade">Allows the message box to fade in and out.</param>
+            <param name="fadeSleepTimer">The speed of the fading effect.</param>
+            <param name="buttonOneCustomText">The custom text on the first button.</param>
+            <param name="buttonTwoCustomText">The custom text on the second button.</param>
+            <param name="buttonThreeCustomText">The custom text on the third button.</param>
+            <param name="buttonOneCustomDialogResult">The action for the first button to take.</param>
+            <param name="buttonTwoCustomDialogResult">The action for the second button to take.</param>
+            <param name="buttonThreeCustomDialogResult">The action for the third button to take.</param>
+            <returns>One of the System.Windows.Forms.DialogResult values.</returns>
+        </member>
+        <member name="M:Krypton.Toolkit.Suite.Extended.Developer.Utilities.KryptonMessageBoxExtended.Show(System.Windows.Forms.IWin32Window,System.String,System.String,Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExtendedMessageBoxButtons,Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExtendedMessageBoxCustomButtonOptions,Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExtendedMessageBoxIcon,System.Windows.Forms.MessageBoxDefaultButton,System.Windows.Forms.MessageBoxOptions,System.Nullable{System.Boolean},System.Drawing.Font,System.Boolean,System.String,System.Boolean,System.Nullable{System.Windows.Forms.CheckState},System.Nullable{System.Windows.Forms.AnchorStyles},System.Nullable{System.Drawing.Point},System.Drawing.Image,System.Boolean,System.String,System.Nullable{System.Boolean},System.Nullable{System.Int32},System.String,System.String,System.String,System.Nullable{System.Windows.Forms.DialogResult},System.Nullable{System.Windows.Forms.DialogResult},System.Nullable{System.Windows.Forms.DialogResult})">
+            <summary>
+            Displays a message box in front of the specified object and with the specified text, caption, buttons, icon, default button, and options.
+            </summary>
+            <param name="owner">Owner of the modal dialog box.</param>
+            <param name="text">The text to display in the message box.</param>
+            <param name="caption">The text to display in the title bar of the message box.</param>
+            <param name="buttons">One of the System.Windows.Forms.ExtendedMessageBoxButton values that specifies which buttons to display in the message box.</param>
+            <param name="customButtonOptions">Custom button options.</param>
+            <param name="icon">One of the System.Windows.Forms.ExtendedMessageBoxIcon values that specifies which icon to display in the message box.</param>
+            <param name="defaultButton">One of the System.Windows.Forms.MessageBoxDefaultButton values that specifies the default button for the message box.</param>
+            <param name="options">One of the System.Windows.Forms.MessageBoxOptions values that specifies which display and association options will be used for the message box. You may pass in 0 if you wish to use the defaults.</param>
+            <param name="showCtrlCopy">Show extraText in title. If null(default) then only when Warning or Error icon is used.</param>
+            <param name="messageboxTypeface">The message box typeface. (Can be null)</param>
+            <param name="showOptionalCheckBox">Shows an optional check box in the footer of the <see cref="T:Krypton.Toolkit.Suite.Extended.Developer.Utilities.KryptonMessageBoxExtended"/>.</param>
+            <param name="optionalCheckBoxText">The text shown on the optional check box.</param>
+            <param name="isOptionalCheckBoxChecked">Is the optional check box already checked.</param>
+            <param name="optionalCheckBoxCheckState">The check state of the optional check box.</param>
+            <param name="optionalCheckBoxAnchor">The <see cref="T:System.Windows.Forms.AnchorStyles"/> of the optional check box. (Always keep it to the left.)</param>
+            <param name="optionalCheckBoxLocation">The location of the optional check box.</param>
+            <param name="customMessageBoxIcon">Set a custom message box icon. (Must be at least a 32 x 32 PNG image.)</param>
+            <param name="showCopyButton">Shows an optional copy button, to copy the message box content text to the Windows clipboard.</param>
+            <param name="copyButtonText">The text shown on the copy button.</param>
+            <param name="fade">Allows the message box to fade in and out.</param>
+            <param name="fadeSleepTimer">The speed of the fading effect.</param>
+            <param name="buttonOneCustomText">The custom text on the first button.</param>
+            <param name="buttonTwoCustomText">The custom text on the second button.</param>
+            <param name="buttonThreeCustomText">The custom text on the third button.</param>
+            <param name="buttonOneCustomDialogResult">The action for the first button to take.</param>
+            <param name="buttonTwoCustomDialogResult">The action for the second button to take.</param>
+            <param name="buttonThreeCustomDialogResult">The action for the third button to take.</param>
+            <returns>One of the System.Windows.Forms.DialogResult values.</returns>
+        </member>
+        <member name="M:Krypton.Toolkit.Suite.Extended.Developer.Utilities.KryptonMessageBoxExtended.Show(System.String,System.String,Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExtendedMessageBoxButtons,Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExtendedMessageBoxCustomButtonOptions,Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExtendedMessageBoxIcon,System.Windows.Forms.MessageBoxDefaultButton,System.Windows.Forms.MessageBoxOptions,System.Boolean,System.Nullable{System.Boolean},System.Drawing.Font,System.Boolean,System.String,System.Boolean,System.Nullable{System.Windows.Forms.CheckState},System.Nullable{System.Windows.Forms.AnchorStyles},System.Nullable{System.Drawing.Point},System.Drawing.Image,System.Boolean,System.String,System.Nullable{System.Boolean},System.Nullable{System.Int32},System.String,System.String,System.String,System.Nullable{System.Windows.Forms.DialogResult},System.Nullable{System.Windows.Forms.DialogResult},System.Nullable{System.Windows.Forms.DialogResult})">
+            <summary>
+            Displays a message box with the specified text, caption, buttons, icon, default button, options, and Help button.
+            </summary>
+            <param name="text">The text to display in the message box.</param>
+            <param name="caption">The text to display in the title bar of the message box.</param>
+            <param name="buttons">One of the System.Windows.Forms.ExtendedMessageBoxButton values that specifies which buttons to display in the message box.</param>
+            <param name="customButtonOptions">Custom button options.</param>
+            <param name="icon">One of the System.Windows.Forms.ExtendedMessageBoxIcon values that specifies which icon to display in the message box.</param>
+            <param name="defaultButton">One of the System.Windows.Forms.MessageBoxDefaultButton values that specifies the default button for the message box.</param>
+            <param name="options">One of the System.Windows.Forms.MessageBoxOptions values that specifies which display and association options will be used for the message box. You may pass in 0 if you wish to use the defaults.</param>
+            <param name="displayHelpButton">Displays a message box with the specified text, caption, buttons, icon, default button, options, and Help button.</param>
+            <param name="showCtrlCopy">Show extraText in title. If null(default) then only when Warning or Error icon is used.</param>
+            <param name="messageboxTypeface">The message box typeface. (Can be null)</param>
+            <param name="showOptionalCheckBox">Shows an optional check box in the footer of the <see cref="T:Krypton.Toolkit.Suite.Extended.Developer.Utilities.KryptonMessageBoxExtended"/>.</param>
+            <param name="optionalCheckBoxText">The text shown on the optional check box.</param>
+            <param name="isOptionalCheckBoxChecked">Is the optional check box already checked.</param>
+            <param name="optionalCheckBoxCheckState">The check state of the optional check box.</param>
+            <param name="optionalCheckBoxAnchor">The <see cref="T:System.Windows.Forms.AnchorStyles"/> of the optional check box. (Always keep it to the left.)</param>
+            <param name="optionalCheckBoxLocation">The location of the optional check box.</param>
+            <param name="customMessageBoxIcon">Set a custom message box icon. (Must be at least a 32 x 32 PNG image.)</param>
+            <param name="showCopyButton">Shows an optional copy button, to copy the message box content text to the Windows clipboard.</param>
+            <param name="copyButtonText">The text shown on the copy button.</param>
+            <param name="fade">Allows the message box to fade in and out.</param>
+            <param name="fadeSleepTimer">The speed of the fading effect.</param>
+            <param name="buttonOneCustomText">The custom text on the first button.</param>
+            <param name="buttonTwoCustomText">The custom text on the second button.</param>
+            <param name="buttonThreeCustomText">The custom text on the third button.</param>
+            <param name="buttonOneCustomDialogResult">The action for the first button to take.</param>
+            <param name="buttonTwoCustomDialogResult">The action for the second button to take.</param>
+            <param name="buttonThreeCustomDialogResult">The action for the third button to take.</param>
+            <returns>One of the System.Windows.Forms.DialogResult values.</returns>
+        </member>
+        <member name="M:Krypton.Toolkit.Suite.Extended.Developer.Utilities.KryptonMessageBoxExtended.Show(System.String,System.String,Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExtendedMessageBoxButtons,Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExtendedMessageBoxCustomButtonOptions,Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExtendedMessageBoxIcon,System.Windows.Forms.MessageBoxDefaultButton,System.Windows.Forms.MessageBoxOptions,System.String,System.Nullable{System.Boolean},System.Drawing.Font,System.Boolean,System.String,System.Boolean,System.Nullable{System.Windows.Forms.CheckState},System.Nullable{System.Windows.Forms.AnchorStyles},System.Nullable{System.Drawing.Point},System.Drawing.Image,System.Boolean,System.String,System.Nullable{System.Boolean},System.Nullable{System.Int32},System.String,System.String,System.String,System.Nullable{System.Windows.Forms.DialogResult},System.Nullable{System.Windows.Forms.DialogResult},System.Nullable{System.Windows.Forms.DialogResult})">
+            <summary>
+            Displays a message box with the specified text, caption, buttons, icon, default button, options, and Help button, using the specified Help file.
+            </summary>
+            <param name="text">The text to display in the message box.</param>
+            <param name="caption">The text to display in the title bar of the message box.</param>
+            <param name="buttons">One of the System.Windows.Forms.ExtendedMessageBoxButton values that specifies which buttons to display in the message box.</param>
+            <param name="customButtonOptions">Custom button options.</param>
+            <param name="icon">One of the System.Windows.Forms.ExtendedMessageBoxIcon values that specifies which icon to display in the message box.</param>
+            <param name="defaultButton">One of the System.Windows.Forms.MessageBoxDefaultButton values that specifies the default button for the message box.</param>
+            <param name="options">One of the System.Windows.Forms.MessageBoxOptions values that specifies which display and association options will be used for the message box. You may pass in 0 if you wish to use the defaults.</param>
+            <param name="helpFilePath">The path and name of the Help file to display when the user clicks the Help button.</param>
+            <param name="showCtrlCopy">Show extraText in title. If null(default) then only when Warning or Error icon is used.</param>
+            <param name="messageboxTypeface">The message box typeface. (Can be null)</param>
+            <param name="showOptionalCheckBox">Shows an optional check box in the footer of the <see cref="T:Krypton.Toolkit.Suite.Extended.Developer.Utilities.KryptonMessageBoxExtended"/>.</param>
+            <param name="optionalCheckBoxText">The text shown on the optional check box.</param>
+            <param name="isOptionalCheckBoxChecked">Is the optional check box already checked.</param>
+            <param name="optionalCheckBoxCheckState">The check state of the optional check box.</param>
+            <param name="optionalCheckBoxAnchor">The <see cref="T:System.Windows.Forms.AnchorStyles"/> of the optional check box. (Always keep it to the left.)</param>
+            <param name="optionalCheckBoxLocation">The location of the optional check box.</param>
+            <param name="customMessageBoxIcon">Set a custom message box icon. (Must be at least a 32 x 32 PNG image.)</param>
+            <param name="showCopyButton">Shows an optional copy button, to copy the message box content text to the Windows clipboard.</param>
+            <param name="copyButtonText">The text shown on the copy button.</param>
+            <param name="fade">Allows the message box to fade in and out.</param>
+            <param name="fadeSleepTimer">The speed of the fading effect.</param>
+            <param name="buttonOneCustomText">The custom text on the first button.</param>
+            <param name="buttonTwoCustomText">The custom text on the second button.</param>
+            <param name="buttonThreeCustomText">The custom text on the third button.</param>
+            <param name="buttonOneCustomDialogResult">The action for the first button to take.</param>
+            <param name="buttonTwoCustomDialogResult">The action for the second button to take.</param>
+            <param name="buttonThreeCustomDialogResult">The action for the third button to take.</param>
+            <returns>One of the System.Windows.Forms.DialogResult values.</returns>
+        </member>
+        <member name="M:Krypton.Toolkit.Suite.Extended.Developer.Utilities.KryptonMessageBoxExtended.Show(System.Windows.Forms.IWin32Window,System.String,System.String,Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExtendedMessageBoxButtons,Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExtendedMessageBoxCustomButtonOptions,Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExtendedMessageBoxIcon,System.Windows.Forms.MessageBoxDefaultButton,System.Windows.Forms.MessageBoxOptions,System.String,System.Nullable{System.Boolean},System.Drawing.Font,System.Boolean,System.String,System.Boolean,System.Nullable{System.Windows.Forms.CheckState},System.Nullable{System.Windows.Forms.AnchorStyles},System.Nullable{System.Drawing.Point},System.Drawing.Image,System.Boolean,System.String,System.Nullable{System.Boolean},System.Nullable{System.Int32},System.String,System.String,System.String,System.Nullable{System.Windows.Forms.DialogResult},System.Nullable{System.Windows.Forms.DialogResult},System.Nullable{System.Windows.Forms.DialogResult})">
+            <summary>
+            Displays a message box with the specified text, caption, buttons, icon, default button, options, and Help button, using the specified Help file.
+            </summary>
+            <param name="owner">Owner of the modal dialog box.</param>
+            <param name="text">The text to display in the message box.</param>
+            <param name="caption">The text to display in the title bar of the message box.</param>
+            <param name="buttons">One of the System.Windows.Forms.ExtendedMessageBoxButton values that specifies which buttons to display in the message box.</param>
+            <param name="customButtonOptions">Custom button options.</param>
+            <param name="icon">One of the System.Windows.Forms.ExtendedMessageBoxIcon values that specifies which icon to display in the message box.</param>
+            <param name="defaultButton">One of the System.Windows.Forms.MessageBoxDefaultButton values that specifies the default button for the message box.</param>
+            <param name="options">One of the System.Windows.Forms.MessageBoxOptions values that specifies which display and association options will be used for the message box. You may pass in 0 if you wish to use the defaults.</param>
+            <param name="helpFilePath">The path and name of the Help file to display when the user clicks the Help button.</param>
+            <param name="showCtrlCopy">Show extraText in title. If null(default) then only when Warning or Error icon is used.</param>
+            <param name="messageboxTypeface">The message box typeface. (Can be null)</param>
+            <param name="showOptionalCheckBox">Shows an optional check box in the footer of the <see cref="T:Krypton.Toolkit.Suite.Extended.Developer.Utilities.KryptonMessageBoxExtended"/>.</param>
+            <param name="optionalCheckBoxText">The text shown on the optional check box.</param>
+            <param name="isOptionalCheckBoxChecked">Is the optional check box already checked.</param>
+            <param name="optionalCheckBoxCheckState">The check state of the optional check box.</param>
+            <param name="optionalCheckBoxAnchor">The <see cref="T:System.Windows.Forms.AnchorStyles"/> of the optional check box. (Always keep it to the left.)</param>
+            <param name="optionalCheckBoxLocation">The location of the optional check box.</param>
+            <param name="customMessageBoxIcon">Set a custom message box icon. (Must be at least a 32 x 32 PNG image.)</param>
+            <param name="showCopyButton">Shows an optional copy button, to copy the message box content text to the Windows clipboard.</param>
+            <param name="copyButtonText">The text shown on the copy button.</param>
+            <param name="fade">Allows the message box to fade in and out.</param>
+            <param name="fadeSleepTimer">The speed of the fading effect.</param>
+            <param name="buttonOneCustomText">The custom text on the first button.</param>
+            <param name="buttonTwoCustomText">The custom text on the second button.</param>
+            <param name="buttonThreeCustomText">The custom text on the third button.</param>
+            <param name="buttonOneCustomDialogResult">The action for the first button to take.</param>
+            <param name="buttonTwoCustomDialogResult">The action for the second button to take.</param>
+            <param name="buttonThreeCustomDialogResult">The action for the third button to take.</param>
+            <returns>One of the System.Windows.Forms.DialogResult values.</returns>
+        </member>
+        <member name="M:Krypton.Toolkit.Suite.Extended.Developer.Utilities.KryptonMessageBoxExtended.Show(System.String,System.String,Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExtendedMessageBoxButtons,Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExtendedMessageBoxCustomButtonOptions,Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExtendedMessageBoxIcon,System.Windows.Forms.MessageBoxDefaultButton,System.Windows.Forms.MessageBoxOptions,System.String,System.Windows.Forms.HelpNavigator,System.Nullable{System.Boolean},System.Drawing.Font,System.Boolean,System.String,System.Boolean,System.Nullable{System.Windows.Forms.CheckState},System.Nullable{System.Windows.Forms.AnchorStyles},System.Nullable{System.Drawing.Point},System.Drawing.Image,System.Boolean,System.String,System.Nullable{System.Boolean},System.Nullable{System.Int32},System.String,System.String,System.String,System.Nullable{System.Windows.Forms.DialogResult},System.Nullable{System.Windows.Forms.DialogResult},System.Nullable{System.Windows.Forms.DialogResult})">
+            <summary>
+            Displays a message box with the specified text, caption, buttons, icon, default button, options, and Help button, using the specified Help file and HelpNavigator.
+            </summary>
+            <param name="text">The text to display in the message box.</param>
+            <param name="caption">The text to display in the title bar of the message box.</param>
+            <param name="buttons">One of the System.Windows.Forms.ExtendedMessageBoxButton values that specifies which buttons to display in the message box.</param>
+            <param name="customButtonOptions">Custom button options.</param>
+            <param name="icon">One of the System.Windows.Forms.ExtendedMessageBoxIcon values that specifies which icon to display in the message box.</param>
+            <param name="defaultButton">One of the System.Windows.Forms.MessageBoxDefaultButton values that specifies the default button for the message box.</param>
+            <param name="options">One of the System.Windows.Forms.MessageBoxOptions values that specifies which display and association options will be used for the message box. You may pass in 0 if you wish to use the defaults.</param>
+            <param name="helpFilePath">The path and name of the Help file to display when the user clicks the Help button.</param>
+            <param name="navigator">One of the System.Windows.Forms.HelpNavigator values.</param>
+            <param name="showCtrlCopy">Show extraText in title. If null(default) then only when Warning or Error icon is used.</param>
+            <param name="messageboxTypeface">The message box typeface. (Can be null)</param>
+            <param name="showOptionalCheckBox">Shows an optional check box in the footer of the <see cref="T:Krypton.Toolkit.Suite.Extended.Developer.Utilities.KryptonMessageBoxExtended"/>.</param>
+            <param name="optionalCheckBoxText">The text shown on the optional check box.</param>
+            <param name="isOptionalCheckBoxChecked">Is the optional check box already checked.</param>
+            <param name="optionalCheckBoxCheckState">The check state of the optional check box.</param>
+            <param name="optionalCheckBoxAnchor">The <see cref="T:System.Windows.Forms.AnchorStyles"/> of the optional check box. (Always keep it to the left.)</param>
+            <param name="optionalCheckBoxLocation">The location of the optional check box.</param>
+            <param name="customMessageBoxIcon">Set a custom message box icon. (Must be at least a 32 x 32 PNG image.)</param>
+            <param name="showCopyButton">Shows an optional copy button, to copy the message box content text to the Windows clipboard.</param>
+            <param name="copyButtonText">The text shown on the copy button.</param>
+            <param name="fade">Allows the message box to fade in and out.</param>
+            <param name="fadeSleepTimer">The speed of the fading effect.</param>
+            <param name="buttonOneCustomText">The custom text on the first button.</param>
+            <param name="buttonTwoCustomText">The custom text on the second button.</param>
+            <param name="buttonThreeCustomText">The custom text on the third button.</param>
+            <param name="buttonOneCustomDialogResult">The action for the first button to take.</param>
+            <param name="buttonTwoCustomDialogResult">The action for the second button to take.</param>
+            <param name="buttonThreeCustomDialogResult">The action for the third button to take.</param>
+            <returns>One of the System.Windows.Forms.DialogResult values.</returns>
+        </member>
+        <member name="M:Krypton.Toolkit.Suite.Extended.Developer.Utilities.KryptonMessageBoxExtended.Show(System.String,System.String,Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExtendedMessageBoxButtons,Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExtendedMessageBoxCustomButtonOptions,Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExtendedMessageBoxIcon,System.Windows.Forms.MessageBoxDefaultButton,System.Windows.Forms.MessageBoxOptions,System.String,System.String,System.Nullable{System.Boolean},System.Drawing.Font,System.Boolean,System.String,System.Boolean,System.Nullable{System.Windows.Forms.CheckState},System.Nullable{System.Windows.Forms.AnchorStyles},System.Nullable{System.Drawing.Point},System.Drawing.Image,System.Boolean,System.String,System.Nullable{System.Boolean},System.Nullable{System.Int32},System.String,System.String,System.String,System.Nullable{System.Windows.Forms.DialogResult},System.Nullable{System.Windows.Forms.DialogResult},System.Nullable{System.Windows.Forms.DialogResult})">
+            <summary>
+            Displays a message box with the specified text, caption, buttons, icon, default button, options, and Help button, using the specified Help file and Help keyword.
+            </summary>
+            <param name="text">The text to display in the message box.</param>
+            <param name="caption">The text to display in the title bar of the message box.</param>
+            <param name="buttons">One of the System.Windows.Forms.ExtendedMessageBoxButton values that specifies which buttons to display in the message box.</param>
+            <param name="customButtonOptions">Custom button options.</param>
+            <param name="icon">One of the System.Windows.Forms.ExtendedMessageBoxIcon values that specifies which icon to display in the message box.</param>
+            <param name="defaultButton">One of the System.Windows.Forms.MessageBoxDefaultButton values that specifies the default button for the message box.</param>
+            <param name="options">One of the System.Windows.Forms.MessageBoxOptions values that specifies which display and association options will be used for the message box. You may pass in 0 if you wish to use the defaults.</param>
+            <param name="helpFilePath">The path and name of the Help file to display when the user clicks the Help button.</param>
+            <param name="keyword">The Help keyword to display when the user clicks the Help button.</param>
+            <param name="showCtrlCopy">Show extraText in title. If null(default) then only when Warning or Error icon is used.</param>
+            <param name="messageboxTypeface">The message box typeface. (Can be null)</param>
+            <param name="showOptionalCheckBox">Shows an optional check box in the footer of the <see cref="T:Krypton.Toolkit.Suite.Extended.Developer.Utilities.KryptonMessageBoxExtended"/>.</param>
+            <param name="optionalCheckBoxText">The text shown on the optional check box.</param>
+            <param name="isOptionalCheckBoxChecked">Is the optional check box already checked.</param>
+            <param name="optionalCheckBoxCheckState">The check state of the optional check box.</param>
+            <param name="optionalCheckBoxAnchor">The <see cref="T:System.Windows.Forms.AnchorStyles"/> of the optional check box. (Always keep it to the left.)</param>
+            <param name="optionalCheckBoxLocation">The location of the optional check box.</param>
+            <param name="customMessageBoxIcon">Set a custom message box icon. (Must be at least a 32 x 32 PNG image.)</param>
+            <param name="showCopyButton">Shows an optional copy button, to copy the message box content text to the Windows clipboard.</param>
+            <param name="copyButtonText">The text shown on the copy button.</param>
+            <param name="fade">Allows the message box to fade in and out.</param>
+            <param name="fadeSleepTimer">The speed of the fading effect.</param>
+            <param name="buttonOneCustomText">The custom text on the first button.</param>
+            <param name="buttonTwoCustomText">The custom text on the second button.</param>
+            <param name="buttonThreeCustomText">The custom text on the third button.</param>
+            <param name="buttonOneCustomDialogResult">The action for the first button to take.</param>
+            <param name="buttonTwoCustomDialogResult">The action for the second button to take.</param>
+            <param name="buttonThreeCustomDialogResult">The action for the third button to take.</param>
+            <returns>One of the System.Windows.Forms.DialogResult values.</returns>
+        </member>
+        <member name="M:Krypton.Toolkit.Suite.Extended.Developer.Utilities.KryptonMessageBoxExtended.Show(System.Windows.Forms.IWin32Window,System.String,System.String,Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExtendedMessageBoxButtons,Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExtendedMessageBoxCustomButtonOptions,Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExtendedMessageBoxIcon,System.Windows.Forms.MessageBoxDefaultButton,System.Windows.Forms.MessageBoxOptions,System.String,System.Windows.Forms.HelpNavigator,System.Nullable{System.Boolean},System.Drawing.Font,System.Boolean,System.String,System.Boolean,System.Nullable{System.Windows.Forms.CheckState},System.Nullable{System.Windows.Forms.AnchorStyles},System.Nullable{System.Drawing.Point},System.Drawing.Image,System.Boolean,System.String,System.Nullable{System.Boolean},System.Nullable{System.Int32},System.String,System.String,System.String,System.Nullable{System.Windows.Forms.DialogResult},System.Nullable{System.Windows.Forms.DialogResult},System.Nullable{System.Windows.Forms.DialogResult})">
+            <summary>
+            Displays a message box with the specified text, caption, buttons, icon, default button, options, and Help button, using the specified Help file and HelpNavigator.
+            </summary>
+            <param name="owner">Owner of the modal dialog box.</param>
+            <param name="text">The text to display in the message box.</param>
+            <param name="caption">The text to display in the title bar of the message box.</param>
+            <param name="buttons">One of the System.Windows.Forms.ExtendedMessageBoxButton values that specifies which buttons to display in the message box.</param>
+            <param name="customButtonOptions">Custom button options.</param>
+            <param name="icon">One of the System.Windows.Forms.ExtendedMessageBoxIcon values that specifies which icon to display in the message box.</param>
+            <param name="defaultButton">One of the System.Windows.Forms.MessageBoxDefaultButton values that specifies the default button for the message box.</param>
+            <param name="options">One of the System.Windows.Forms.MessageBoxOptions values that specifies which display and association options will be used for the message box. You may pass in 0 if you wish to use the defaults.</param>
+            <param name="helpFilePath">The path and name of the Help file to display when the user clicks the Help button.</param>
+            <param name="navigator">One of the System.Windows.Forms.HelpNavigator values.</param>
+            <param name="showCtrlCopy">Show extraText in title. If null(default) then only when Warning or Error icon is used.</param>
+            <param name="messageboxTypeface">The message box typeface. (Can be null)</param>
+            <param name="showOptionalCheckBox">Shows an optional check box in the footer of the <see cref="T:Krypton.Toolkit.Suite.Extended.Developer.Utilities.KryptonMessageBoxExtended"/>.</param>
+            <param name="optionalCheckBoxText">The text shown on the optional check box.</param>
+            <param name="isOptionalCheckBoxChecked">Is the optional check box already checked.</param>
+            <param name="optionalCheckBoxCheckState">The check state of the optional check box.</param>
+            <param name="optionalCheckBoxAnchor">The <see cref="T:System.Windows.Forms.AnchorStyles"/> of the optional check box. (Always keep it to the left.)</param>
+            <param name="optionalCheckBoxLocation">The location of the optional check box.</param>
+            <param name="customMessageBoxIcon">Set a custom message box icon. (Must be at least a 32 x 32 PNG image.)</param>
+            <param name="showCopyButton">Shows an optional copy button, to copy the message box content text to the Windows clipboard.</param>
+            <param name="copyButtonText">The text shown on the copy button.</param>
+            <param name="fade">Allows the message box to fade in and out.</param>
+            <param name="fadeSleepTimer">The speed of the fading effect.</param>
+            <param name="buttonOneCustomText">The custom text on the first button.</param>
+            <param name="buttonTwoCustomText">The custom text on the second button.</param>
+            <param name="buttonThreeCustomText">The custom text on the third button.</param>
+            <param name="buttonOneCustomDialogResult">The action for the first button to take.</param>
+            <param name="buttonTwoCustomDialogResult">The action for the second button to take.</param>
+            <param name="buttonThreeCustomDialogResult">The action for the third button to take.</param>
+            <returns>One of the System.Windows.Forms.DialogResult values.</returns>
+        </member>
+        <member name="M:Krypton.Toolkit.Suite.Extended.Developer.Utilities.KryptonMessageBoxExtended.Show(System.Windows.Forms.IWin32Window,System.String,System.String,Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExtendedMessageBoxButtons,Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExtendedMessageBoxCustomButtonOptions,Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExtendedMessageBoxIcon,System.Windows.Forms.MessageBoxDefaultButton,System.Windows.Forms.MessageBoxOptions,System.String,System.String,System.Nullable{System.Boolean},System.Drawing.Font,System.Boolean,System.String,System.Boolean,System.Nullable{System.Windows.Forms.CheckState},System.Nullable{System.Windows.Forms.AnchorStyles},System.Nullable{System.Drawing.Point},System.Drawing.Image,System.Boolean,System.String,System.Nullable{System.Boolean},System.Nullable{System.Int32},System.String,System.String,System.String,System.Nullable{System.Windows.Forms.DialogResult},System.Nullable{System.Windows.Forms.DialogResult},System.Nullable{System.Windows.Forms.DialogResult})">
+            <summary>
+            Displays a message box with the specified text, caption, buttons, icon, default button, options, and Help button, using the specified Help file and Help keyword.
+            </summary>
+            <param name="owner">Owner of the modal dialog box.</param>
+            <param name="text">The text to display in the message box.</param>
+            <param name="caption">The text to display in the title bar of the message box.</param>
+            <param name="buttons">One of the System.Windows.Forms.ExtendedMessageBoxButton values that specifies which buttons to display in the message box.</param>
+            <param name="customButtonOptions">Custom button options.</param>
+            <param name="icon">One of the System.Windows.Forms.ExtendedMessageBoxIcon values that specifies which icon to display in the message box.</param>
+            <param name="defaultButton">One of the System.Windows.Forms.MessageBoxDefaultButton values that specifies the default button for the message box.</param>
+            <param name="options">One of the System.Windows.Forms.MessageBoxOptions values that specifies which display and association options will be used for the message box. You may pass in 0 if you wish to use the defaults.</param>
+            <param name="helpFilePath">The path and name of the Help file to display when the user clicks the Help button.</param>
+            <param name="keyword">The Help keyword to display when the user clicks the Help button.</param>
+            <param name="showCtrlCopy">Show extraText in title. If null(default) then only when Warning or Error icon is used.</param>
+            <param name="messageboxTypeface">The message box typeface. (Can be null)</param>
+            <param name="showOptionalCheckBox">Shows an optional check box in the footer of the <see cref="T:Krypton.Toolkit.Suite.Extended.Developer.Utilities.KryptonMessageBoxExtended"/>.</param>
+            <param name="optionalCheckBoxText">The text shown on the optional check box.</param>
+            <param name="isOptionalCheckBoxChecked">Is the optional check box already checked.</param>
+            <param name="optionalCheckBoxCheckState">The check state of the optional check box.</param>
+            <param name="optionalCheckBoxAnchor">The <see cref="T:System.Windows.Forms.AnchorStyles"/> of the optional check box. (Always keep it to the left.)</param>
+            <param name="optionalCheckBoxLocation">The location of the optional check box.</param>
+            <param name="customMessageBoxIcon">Set a custom message box icon. (Must be at least a 32 x 32 PNG image.)</param>
+            <param name="showCopyButton">Shows an optional copy button, to copy the message box content text to the Windows clipboard.</param>
+            <param name="copyButtonText">The text shown on the copy button.</param>
+            <param name="fade">Allows the message box to fade in and out.</param>
+            <param name="fadeSleepTimer">The speed of the fading effect.</param>
+            <param name="buttonOneCustomText">The custom text on the first button.</param>
+            <param name="buttonTwoCustomText">The custom text on the second button.</param>
+            <param name="buttonThreeCustomText">The custom text on the third button.</param>
+            <param name="buttonOneCustomDialogResult">The action for the first button to take.</param>
+            <param name="buttonTwoCustomDialogResult">The action for the second button to take.</param>
+            <param name="buttonThreeCustomDialogResult">The action for the third button to take.</param>
+            <returns>One of the System.Windows.Forms.DialogResult values.</returns>
+        </member>
+        <member name="M:Krypton.Toolkit.Suite.Extended.Developer.Utilities.KryptonMessageBoxExtended.Show(System.String,System.String,Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExtendedMessageBoxButtons,Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExtendedMessageBoxCustomButtonOptions,Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExtendedMessageBoxIcon,System.Windows.Forms.MessageBoxDefaultButton,System.Windows.Forms.MessageBoxOptions,System.String,System.Windows.Forms.HelpNavigator,System.Object,System.Nullable{System.Boolean},System.Drawing.Font,System.Boolean,System.String,System.Boolean,System.Nullable{System.Windows.Forms.CheckState},System.Nullable{System.Windows.Forms.AnchorStyles},System.Nullable{System.Drawing.Point},System.Drawing.Image,System.Boolean,System.String,System.Nullable{System.Boolean},System.Nullable{System.Int32},System.String,System.String,System.String,System.Nullable{System.Windows.Forms.DialogResult},System.Nullable{System.Windows.Forms.DialogResult},System.Nullable{System.Windows.Forms.DialogResult})">
+            <summary>
+            Displays a message box with the specified text, caption, buttons, icon, default button, options, and Help button, using the specified Help file, HelpNavigator, and Help topic.
+            </summary>
+            <param name="text">The text to display in the message box.</param>
+            <param name="caption">The text to display in the title bar of the message box.</param>
+            <param name="buttons">One of the System.Windows.Forms.ExtendedMessageBoxButton values that specifies which buttons to display in the message box.</param>
+            <param name="customButtonOptions">Custom button options.</param>
+            <param name="icon">One of the System.Windows.Forms.ExtendedMessageBoxIcon values that specifies which icon to display in the message box.</param>
+            <param name="defaultButton">One of the System.Windows.Forms.MessageBoxDefaultButton values that specifies the default button for the message box.</param>
+            <param name="options">One of the System.Windows.Forms.MessageBoxOptions values that specifies which display and association options will be used for the message box. You may pass in 0 if you wish to use the defaults.</param>
+            <param name="helpFilePath">The path and name of the Help file to display when the user clicks the Help button.</param>
+            <param name="navigator">One of the System.Windows.Forms.HelpNavigator values.</param>
+            <param name="param">The numeric ID of the Help topic to display when the user clicks the Help button.</param>
+            <param name="showCtrlCopy">Show extraText in title. If null(default) then only when Warning or Error icon is used.</param>
+            <param name="messageboxTypeface">The message box typeface. (Can be null)</param>
+            <param name="showOptionalCheckBox">Shows an optional check box in the footer of the <see cref="T:Krypton.Toolkit.Suite.Extended.Developer.Utilities.KryptonMessageBoxExtended"/>.</param>
+            <param name="optionalCheckBoxText">The text shown on the optional check box.</param>
+            <param name="isOptionalCheckBoxChecked">Is the optional check box already checked.</param>
+            <param name="optionalCheckBoxCheckState">The check state of the optional check box.</param>
+            <param name="optionalCheckBoxAnchor">The <see cref="T:System.Windows.Forms.AnchorStyles"/> of the optional check box. (Always keep it to the left.)</param>
+            <param name="optionalCheckBoxLocation">The location of the optional check box.</param>
+            <param name="customMessageBoxIcon">Set a custom message box icon. (Must be at least a 32 x 32 PNG image.)</param>
+            <param name="showCopyButton">Shows an optional copy button, to copy the message box content text to the Windows clipboard.</param>
+            <param name="copyButtonText">The text shown on the copy button.</param>
+            <param name="fade">Allows the message box to fade in and out.</param>
+            <param name="fadeSleepTimer">The speed of the fading effect.</param>
+            <param name="buttonOneCustomText">The custom text on the first button.</param>
+            <param name="buttonTwoCustomText">The custom text on the second button.</param>
+            <param name="buttonThreeCustomText">The custom text on the third button.</param>
+            <param name="buttonOneCustomDialogResult">The action for the first button to take.</param>
+            <param name="buttonTwoCustomDialogResult">The action for the second button to take.</param>
+            <param name="buttonThreeCustomDialogResult">The action for the third button to take.</param>
+            <returns>One of the System.Windows.Forms.DialogResult values.</returns>
+        </member>
+        <member name="M:Krypton.Toolkit.Suite.Extended.Developer.Utilities.KryptonMessageBoxExtended.Show(System.Windows.Forms.IWin32Window,System.String,System.String,Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExtendedMessageBoxButtons,Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExtendedMessageBoxCustomButtonOptions,Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExtendedMessageBoxIcon,System.Windows.Forms.MessageBoxDefaultButton,System.Windows.Forms.MessageBoxOptions,System.String,System.Windows.Forms.HelpNavigator,System.Object,System.Nullable{System.Boolean},System.Drawing.Font,System.Boolean,System.String,System.Boolean,System.Nullable{System.Windows.Forms.CheckState},System.Nullable{System.Windows.Forms.AnchorStyles},System.Nullable{System.Drawing.Point},System.Drawing.Image,System.Boolean,System.String,System.Nullable{System.Boolean},System.Nullable{System.Int32},System.String,System.String,System.String,System.Nullable{System.Windows.Forms.DialogResult},System.Nullable{System.Windows.Forms.DialogResult},System.Nullable{System.Windows.Forms.DialogResult})">
+            <summary>
+            Displays a message box with the specified text, caption, buttons, icon, default button, options, and Help button, using the specified Help file, HelpNavigator, and Help topic.
+            </summary>
+            <param name="owner">Owner of the modal dialog box.</param>
+            <param name="text">The text to display in the message box.</param>
+            <param name="caption">The text to display in the title bar of the message box.</param>
+            <param name="buttons">One of the System.Windows.Forms.ExtendedMessageBoxButton values that specifies which buttons to display in the message box.</param>
+            <param name="customButtonOptions">Custom button options.</param>
+            <param name="icon">One of the System.Windows.Forms.ExtendedMessageBoxIcon values that specifies which icon to display in the message box.</param>
+            <param name="defaultButton">One of the System.Windows.Forms.MessageBoxDefaultButton values that specifies the default button for the message box.</param>
+            <param name="options">One of the System.Windows.Forms.MessageBoxOptions values that specifies which display and association options will be used for the message box. You may pass in 0 if you wish to use the defaults.</param>
+            <param name="helpFilePath">The path and name of the Help file to display when the user clicks the Help button.</param>
+            <param name="navigator">One of the System.Windows.Forms.HelpNavigator values.</param>
+            <param name="param">The numeric ID of the Help topic to display when the user clicks the Help button.</param>
+            <param name="showCtrlCopy">Show extraText in title. If null(default) then only when Warning or Error icon is used.</param>
+            <param name="messageboxTypeface">Defines the messagebox font.</param>
+            <param name="showOptionalCheckBox">Shows an optional check box in the footer of the <see cref="T:Krypton.Toolkit.Suite.Extended.Developer.Utilities.KryptonMessageBoxExtended"/>.</param>
+            <param name="optionalCheckBoxText">The text shown on the optional check box.</param>
+            <param name="isOptionalCheckBoxChecked">Is the optional check box already checked.</param>
+            <param name="optionalCheckBoxCheckState">The check state of the optional check box.</param>
+            <param name="optionalCheckBoxAnchor">The <see cref="T:System.Windows.Forms.AnchorStyles"/> of the optional check box. (Always keep it to the left.)</param>
+            <param name="optionalCheckBoxLocation">The location of the optional check box.</param>
+            <param name="customMessageBoxIcon">Set a custom message box icon. (Must be at least a 32 x 32 PNG image.)</param>
+            <param name="showCopyButton">Shows an optional copy button, to copy the message box content text to the Windows clipboard.</param>
+            <param name="copyButtonText">The text shown on the copy button.</param>
+            <param name="fade">Allows the message box to fade in and out.</param>
+            <param name="fadeSleepTimer">The speed of the fading effect.</param>
+            <param name="buttonOneCustomText">The custom text on the first button.</param>
+            <param name="buttonTwoCustomText">The custom text on the second button.</param>
+            <param name="buttonThreeCustomText">The custom text on the third button.</param>
+            <param name="buttonOneCustomDialogResult">The action for the first button to take.</param>
+            <param name="buttonTwoCustomDialogResult">The action for the second button to take.</param>
+            <param name="buttonThreeCustomDialogResult">The action for the third button to take.</param>
+            <returns>One of the System.Windows.Forms.DialogResult values.</returns>
+        </member>
+        <member name="M:Krypton.Toolkit.Suite.Extended.Developer.Utilities.KryptonMessageBoxExtended.Show(System.Windows.Forms.IWin32Window,System.String,System.String,Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExtendedMessageBoxButtons,Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExtendedMessageBoxCustomButtonOptions,Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExtendedMessageBoxIcon,System.Windows.Forms.MessageBoxDefaultButton,System.Windows.Forms.MessageBoxOptions,Krypton.Toolkit.Suite.Extended.Developer.Utilities.KryptonMessageBoxExtended.HelpInformation,System.Boolean,System.Drawing.Font,System.Boolean,System.String,System.Boolean,System.Nullable{System.Windows.Forms.CheckState},System.Windows.Forms.AnchorStyles,System.Drawing.Point,System.Drawing.Image,System.Boolean,System.String,System.Nullable{System.Boolean},System.Nullable{System.Int32},System.String,System.String,System.String,System.Nullable{System.Windows.Forms.DialogResult},System.Nullable{System.Windows.Forms.DialogResult},System.Nullable{System.Windows.Forms.DialogResult})">
+            <summary>
+            Displays a message box with the specified text, caption, buttons, icon, default button, options, and Help button, using the specified Help file, HelpNavigator, and Help topic.
+            </summary>
+            <param name="owner">Owner of the modal dialog box.</param>
+            <param name="text">The text to display in the message box.</param>
+            <param name="caption">The text to display in the title bar of the message box.</param>
+            <param name="buttons">One of the System.Windows.Forms.ExtendedMessageBoxButton values that specifies which buttons to display in the message box.</param>
+            <param name="customButtonOptions">Custom button options.</param>
+            <param name="icon">One of the System.Windows.Forms.ExtendedMessageBoxIcon values that specifies which icon to display in the message box.</param>
+            <param name="defaultButton">One of the System.Windows.Forms.MessageBoxDefaultButton values that specifies the default button for the message box.</param>
+            <param name="options">One of the System.Windows.Forms.MessageBoxOptions values that specifies which display and association options will be used for the message box. You may pass in 0 if you wish to use the defaults.</param>
+            <param name="helpInformation">The path and name of the Help file to display when the user clicks the Help button.</param>
+            <param name="showCtrlCopy">Show extraText in title. If null(default) then only when Warning or Error icon is used.</param>
+            <param name="messageBoxTypeface">Defines the messagebox font.</param>
+            <param name="showOptionalCheckBox">Shows an optional check box in the footer of the <see cref="T:Krypton.Toolkit.Suite.Extended.Developer.Utilities.KryptonMessageBoxExtended"/>.</param>
+            <param name="optionalCheckBoxText">The text shown on the optional check box.</param>
+            <param name="isOptionalCheckBoxChecked">Is the optional check box already checked.</param>
+            <param name="optionalCheckBoxCheckState">The check state of the optional check box.</param>
+            <param name="optionalCheckBoxAnchor">The <see cref="T:System.Windows.Forms.AnchorStyles"/> of the optional check box. (Always keep it to the left.)</param>
+            <param name="optionalCheckBoxLocation">The location of the optional check box.</param>
+            <param name="customMessageBoxIcon">Set a custom message box icon. (Must be at least a 32 x 32 PNG image.)</param>
+            <param name="showCopyButton">Shows an optional copy button, to copy the message box content text to the Windows clipboard.</param>
+            <param name="copyButtonText">The text shown on the copy button.</param>
+            <param name="fade">Allows the message box to fade in and out.</param>
+            <param name="fadeSleepTimer">The speed of the fading effect.</param>
+            <param name="buttonOneCustomText">The custom text on the first button.</param>
+            <param name="buttonTwoCustomText">The custom text on the second button.</param>
+            <param name="buttonThreeCustomText">The custom text on the third button.</param>
+            <param name="buttonOneCustomDialogResult">The action for the first button to take.</param>
+            <param name="buttonTwoCustomDialogResult">The action for the second button to take.</param>
+            <param name="buttonThreeCustomDialogResult">The action for the third button to take.</param>
+            <returns>One of the System.Windows.Forms.DialogResult values.</returns>
+        </member>
+        <member name="M:Krypton.Toolkit.Suite.Extended.Developer.Utilities.KryptonMessageBoxExtended.ShowOptionalCheckBoxUI(System.Boolean,System.String,System.Boolean,System.Nullable{System.Windows.Forms.CheckState},System.Nullable{System.Windows.Forms.AnchorStyles},System.Nullable{System.Drawing.Point})">
+            <summary>Shows the optional CheckBox UI.</summary>
+            <param name="showOptionalCheckBox">if set to <c>true</c> [show optional CheckBox].</param>
+            <param name="optionalCheckBoxText">The optional CheckBox text.</param>
+            <param name="isOptionalCheckBoxChecked">if set to <c>true</c> [is optional CheckBox checked].</param>
+            <param name="optionalCheckBoxCheckState">State of the optional CheckBox check.</param>
+            <param name="optionalCheckBoxAnchor">The optional CheckBox anchor.</param>
+            <param name="optionalCheckBoxLocation">The optional CheckBox location.</param>
+        </member>
+        <member name="M:Krypton.Toolkit.Suite.Extended.Developer.Utilities.KryptonMessageBoxExtended.SetOptionalCheckBoxValue(System.Boolean)">
+            <summary>Sets the optional CheckBox value.</summary>
+            <param name="value">if set to <c>true</c> [value].</param>
+        </member>
+        <member name="M:Krypton.Toolkit.Suite.Extended.Developer.Utilities.KryptonMessageBoxExtended.GetOptionalCheckBoxValue">
+            <summary>Gets the optional CheckBox value.</summary>
+            <returns>The value of the optional check box.</returns>
+        </member>
+        <member name="M:Krypton.Toolkit.Suite.Extended.Developer.Utilities.KryptonMessageBoxExtended.GetOptionalCheckBoxState">
+            <summary>Gets the state of the optional CheckBox.</summary>
+            <returns></returns>
+        </member>
+        <member name="M:Krypton.Toolkit.Suite.Extended.Developer.Utilities.KryptonMessageBoxExtended.SetOptionalCheckBoxCheckState(System.Windows.Forms.CheckState)">
+            <summary>Sets the state of the optional CheckBox check.</summary>
+            <param name="state">The state.</param>
+        </member>
+        <member name="M:Krypton.Toolkit.Suite.Extended.Developer.Utilities.KryptonMessageBoxExtended.GetOptionalCheckBoxCheckState">
+            <summary>Gets the state of the optional CheckBox check.</summary>
+            <returns>
+              <br />
+            </returns>
+        </member>
+        <member name="M:Krypton.Toolkit.Suite.Extended.Developer.Utilities.KryptonMessageBoxExtended.ShowCopyButton(System.Boolean,System.String)">
+            <summary>Shows the copy button.</summary>
+            <param name="showCopyButton">if set to <c>true</c> [show copy button].</param>
+            <param name="copyButtonText">The copy button text.</param>
+        </member>
+        <member name="M:Krypton.Toolkit.Suite.Extended.Developer.Utilities.KryptonMessageBoxExtended.SetCustomButtonText(Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExtendedMessageBoxCustomButtonOptions,System.String,System.Windows.Forms.DialogResult,System.String,System.Nullable{System.Windows.Forms.DialogResult},System.String,System.Nullable{System.Windows.Forms.DialogResult})">
+            <summary>Sets the custom button text.</summary>
+            <param name="customButtonOptions">The custom button options.</param>
+            <param name="buttonOneText">The button one text.</param>
+            <param name="buttonOneResult">The button one result.</param>
+            <param name="buttonTwoText">The button two text.</param>
+            <param name="buttonTwoResult">The button two result.</param>
+            <param name="buttonThreeText">The button three text.</param>
+            <param name="buttonThreeResult">The button three result.</param>
+        </member>
+        <member name="M:Krypton.Toolkit.Suite.Extended.Developer.Utilities.KryptonMessageBoxExtended.ToggleControlToolTips(System.Boolean)">
+            <summary>Toggles the control tool tips.</summary>
+            <param name="showToolTips">if set to <c>true</c> [show tool tips].</param>
+        </member>
+        <member name="M:Krypton.Toolkit.Suite.Extended.Developer.Utilities.KryptonMessageBoxExtended.SetupControlToolTips(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>Setups the control tool tips.</summary>
+            <param name="buttonOneToolTipHeader">The button one tool tip header.</param>
+            <param name="buttonOneToolTipContent">Content of the button one tool tip.</param>
+            <param name="buttonTwoToolTipHeader">The button two tool tip header.</param>
+            <param name="buttonTwoToolTipContent">Content of the button two tool tip.</param>
+            <param name="buttonThreeToolTipHeader">The button three tool tip header.</param>
+            <param name="buttonThreeToolTipContent">Content of the button three tool tip.</param>
+        </member>
+        <member name="T:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.MONITORINFO">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.MONITORINFO.cbSize">
+            <summary>
+            </summary>            
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.MONITORINFO.rcMonitor">
+            <summary>
+            </summary>            
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.MONITORINFO.rcWork">
+            <summary>
+            </summary>            
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.MONITORINFO.dwFlags">
+            <summary>
+            </summary>            
+        </member>
+        <member name="T:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric">
+            <summary>
+            Flags used with the Windows API (User32.dll):GetSystemMetrics(SystemMetric smIndex)
+              
+            This Enum and declaration signature was written by Gabriel T. Sharp
+            ai_productions@verizon.net or osirisgothra@hotmail.com
+            Obtained on pinvoke.net, please contribute your code to support the wiki!
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_ARRANGE">
+            <summary>
+            The flags that specify how the system arranged minimized windows. For more information, see the Remarks section in this topic.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_CLEANBOOT">
+            <summary>
+            The value that specifies how the system is started: 
+            0 Normal boot
+            1 Fail-safe boot
+            2 Fail-safe with network boot
+            A fail-safe boot (also called SafeBoot, Safe Mode, or Clean Boot) bypasses the user startup files.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_CMONITORS">
+            <summary>
+            The number of display monitors on a desktop. For more information, see the Remarks section in this topic.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_CMOUSEBUTTONS">
+            <summary>
+            The number of buttons on a mouse, or zero if no mouse is installed.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_CXBORDER">
+            <summary>
+            The width of a window border, in pixels. This is equivalent to the SM_CXEDGE value for windows with the 3-D look.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_CXCURSOR">
+            <summary>
+            The width of a cursor, in pixels. The system cannot create cursors of other sizes.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_CXDLGFRAME">
+            <summary>
+            This value is the same as SM_CXFIXEDFRAME.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_CXDOUBLECLK">
+            <summary>
+            The width of the rectangle around the location of a first click in a double-click sequence, in pixels. ,
+            The second click must occur within the rectangle that is defined by SM_CXDOUBLECLK and SM_CYDOUBLECLK for the system
+            to consider the two clicks a double-click. The two clicks must also occur within a specified time.
+            To set the width of the double-click rectangle, call SystemParametersInfo with SPI_SETDOUBLECLKWIDTH.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_CXDRAG">
+            <summary>
+            The number of pixels on either side of a mouse-down point that the mouse pointer can move before a drag operation begins. 
+            This allows the user to click and release the mouse button easily without unintentionally starting a drag operation. 
+            If this value is negative, it is subtracted from the left of the mouse-down point and added to the right of it.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_CXEDGE">
+            <summary>
+            The width of a 3-D border, in pixels. This metric is the 3-D counterpart of SM_CXBORDER.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_CXFIXEDFRAME">
+            <summary>
+            The thickness of the frame around the perimeter of a window that has a caption but is not sizable, in pixels.
+            SM_CXFIXEDFRAME is the height of the horizontal border, and SM_CYFIXEDFRAME is the width of the vertical border.
+            This value is the same as SM_CXDLGFRAME.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_CXFOCUSBORDER">
+            <summary>
+            The width of the left and right edges of the focus rectangle that the DrawFocusRectdraws. 
+            This value is in pixels. 
+            Windows 2000:  This value is not supported.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_CXFRAME">
+            <summary>
+            This value is the same as SM_CXSIZEFRAME.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_CXFULLSCREEN">
+            <summary>
+            The width of the client area for a full-screen window on the primary display monitor, in pixels. 
+            To get the coordinates of the portion of the screen that is not obscured by the system taskbar or by application desktop toolbars, 
+            call the SystemParametersInfofunction with the SPI_GETWORKAREA value.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_CXHSCROLL">
+            <summary>
+            The width of the arrow bitmap on a horizontal scroll bar, in pixels.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_CXHTHUMB">
+            <summary>
+            The width of the thumb box in a horizontal scroll bar, in pixels.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_CXICON">
+            <summary>
+            The default width of an icon, in pixels. The LoadIcon function can load only icons with the dimensions 
+            that SM_CXICON and SM_CYICON specifies.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_CXICONSPACING">
+            <summary>
+            The width of a grid cell for items in large icon view, in pixels. Each item fits into a rectangle of size 
+            SM_CXICONSPACING by SM_CYICONSPACING when arranged. This value is always greater than or equal to SM_CXICON.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_CXMAXIMIZED">
+            <summary>
+            The default width, in pixels, of a maximized top-level window on the primary display monitor.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_CXMAXTRACK">
+            <summary>
+            The default maximum width of a window that has a caption and sizing borders, in pixels. 
+            This metric refers to the entire desktop. The user cannot drag the window frame to a size larger than these dimensions. 
+            A window can override this value by processing the WM_GETMINMAXINFO message.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_CXMENUCHECK">
+            <summary>
+            The width of the default menu check-mark bitmap, in pixels.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_CXMENUSIZE">
+            <summary>
+            The width of menu bar buttons, such as the child window close button that is used in the multiple document interface, in pixels.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_CXMIN">
+            <summary>
+            The minimum width of a window, in pixels.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_CXMINIMIZED">
+            <summary>
+            The width of a minimized window, in pixels.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_CXMINSPACING">
+            <summary>
+            The width of a grid cell for a minimized window, in pixels. Each minimized window fits into a rectangle this size when arranged. 
+            This value is always greater than or equal to SM_CXMINIMIZED.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_CXMINTRACK">
+            <summary>
+            The minimum tracking width of a window, in pixels. The user cannot drag the window frame to a size smaller than these dimensions. 
+            A window can override this value by processing the WM_GETMINMAXINFO message.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_CXPADDEDBORDER">
+            <summary>
+            The amount of border padding for captioned windows, in pixels. Windows XP/2000:  This value is not supported.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_CXSCREEN">
+            <summary>
+            The width of the screen of the primary display monitor, in pixels. This is the same value obtained by calling 
+            GetDeviceCaps as follows: GetDeviceCaps( hdcPrimaryMonitor, HORZRES).
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_CXSIZE">
+            <summary>
+            The width of a button in a window caption or title bar, in pixels.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_CXSIZEFRAME">
+            <summary>
+            The thickness of the sizing border around the perimeter of a window that can be resized, in pixels. 
+            SM_CXSIZEFRAME is the width of the horizontal border, and SM_CYSIZEFRAME is the height of the vertical border. 
+            This value is the same as SM_CXFRAME.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_CXSMICON">
+            <summary>
+            The recommended width of a small icon, in pixels. Small icons typically appear in window captions and in small icon view.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_CXSMSIZE">
+            <summary>
+            The width of small caption buttons, in pixels.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_CXVIRTUALSCREEN">
+            <summary>
+            The width of the virtual screen, in pixels. The virtual screen is the bounding rectangle of all display monitors. 
+            The SM_XVIRTUALSCREEN metric is the coordinates for the left side of the virtual screen.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_CXVSCROLL">
+            <summary>
+            The width of a vertical scroll bar, in pixels.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_CYBORDER">
+            <summary>
+            The height of a window border, in pixels. This is equivalent to the SM_CYEDGE value for windows with the 3-D look.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_CYCAPTION">
+            <summary>
+            The height of a caption area, in pixels.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_CYCURSOR">
+            <summary>
+            The height of a cursor, in pixels. The system cannot create cursors of other sizes.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_CYDLGFRAME">
+            <summary>
+            This value is the same as SM_CYFIXEDFRAME.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_CYDOUBLECLK">
+            <summary>
+            The height of the rectangle around the location of a first click in a double-click sequence, in pixels. 
+            The second click must occur within the rectangle defined by SM_CXDOUBLECLK and SM_CYDOUBLECLK for the system to consider 
+            the two clicks a double-click. The two clicks must also occur within a specified time. To set the height of the double-click 
+            rectangle, call SystemParametersInfo with SPI_SETDOUBLECLKHEIGHT.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_CYDRAG">
+            <summary>
+            The number of pixels above and below a mouse-down point that the mouse pointer can move before a drag operation begins. 
+            This allows the user to click and release the mouse button easily without unintentionally starting a drag operation. 
+            If this value is negative, it is subtracted from above the mouse-down point and added below it.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_CYEDGE">
+            <summary>
+            The height of a 3-D border, in pixels. This is the 3-D counterpart of SM_CYBORDER.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_CYFIXEDFRAME">
+            <summary>
+            The thickness of the frame around the perimeter of a window that has a caption but is not sizable, in pixels. 
+            SM_CXFIXEDFRAME is the height of the horizontal border, and SM_CYFIXEDFRAME is the width of the vertical border. 
+            This value is the same as SM_CYDLGFRAME.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_CYFOCUSBORDER">
+            <summary>
+            The height of the top and bottom edges of the focus rectangle drawn byDrawFocusRect. 
+            This value is in pixels. 
+            Windows 2000:  This value is not supported.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_CYFRAME">
+            <summary>
+            This value is the same as SM_CYSIZEFRAME.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_CYFULLSCREEN">
+            <summary>
+            The height of the client area for a full-screen window on the primary display monitor, in pixels. 
+            To get the coordinates of the portion of the screen not obscured by the system taskbar or by application desktop toolbars,
+            call the SystemParametersInfo function with the SPI_GETWORKAREA value.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_CYHSCROLL">
+            <summary>
+            The height of a horizontal scroll bar, in pixels.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_CYICON">
+            <summary>
+            The default height of an icon, in pixels. The LoadIcon function can load only icons with the dimensions SM_CXICON and SM_CYICON.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_CYICONSPACING">
+            <summary>
+            The height of a grid cell for items in large icon view, in pixels. Each item fits into a rectangle of size 
+            SM_CXICONSPACING by SM_CYICONSPACING when arranged. This value is always greater than or equal to SM_CYICON.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_CYKANJIWINDOW">
+            <summary>
+            For double byte character set versions of the system, this is the height of the Kanji window at the bottom of the screen, in pixels.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_CYMAXIMIZED">
+            <summary>
+            The default height, in pixels, of a maximized top-level window on the primary display monitor.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_CYMAXTRACK">
+            <summary>
+            The default maximum height of a window that has a caption and sizing borders, in pixels. This metric refers to the entire desktop. 
+            The user cannot drag the window frame to a size larger than these dimensions. A window can override this value by processing 
+            the WM_GETMINMAXINFO message.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_CYMENU">
+            <summary>
+            The height of a single-line menu bar, in pixels.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_CYMENUCHECK">
+            <summary>
+            The height of the default menu check-mark bitmap, in pixels.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_CYMENUSIZE">
+            <summary>
+            The height of menu bar buttons, such as the child window close button that is used in the multiple document interface, in pixels.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_CYMIN">
+            <summary>
+            The minimum height of a window, in pixels.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_CYMINIMIZED">
+            <summary>
+            The height of a minimized window, in pixels.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_CYMINSPACING">
+            <summary>
+            The height of a grid cell for a minimized window, in pixels. Each minimized window fits into a rectangle this size when arranged. 
+            This value is always greater than or equal to SM_CYMINIMIZED.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_CYMINTRACK">
+            <summary>
+            The minimum tracking height of a window, in pixels. The user cannot drag the window frame to a size smaller than these dimensions. 
+            A window can override this value by processing the WM_GETMINMAXINFO message.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_CYSCREEN">
+            <summary>
+            The height of the screen of the primary display monitor, in pixels. This is the same value obtained by calling 
+            GetDeviceCaps as follows: GetDeviceCaps( hdcPrimaryMonitor, VERTRES).
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_CYSIZE">
+            <summary>
+            The height of a button in a window caption or title bar, in pixels.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_CYSIZEFRAME">
+            <summary>
+            The thickness of the sizing border around the perimeter of a window that can be resized, in pixels. 
+            SM_CXSIZEFRAME is the width of the horizontal border, and SM_CYSIZEFRAME is the height of the vertical border. 
+            This value is the same as SM_CYFRAME.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_CYSMCAPTION">
+            <summary>
+            The height of a small caption, in pixels.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_CYSMICON">
+            <summary>
+            The recommended height of a small icon, in pixels. Small icons typically appear in window captions and in small icon view.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_CYSMSIZE">
+            <summary>
+            The height of small caption buttons, in pixels.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_CYVIRTUALSCREEN">
+            <summary>
+            The height of the virtual screen, in pixels. The virtual screen is the bounding rectangle of all display monitors. 
+            The SM_YVIRTUALSCREEN metric is the coordinates for the top of the virtual screen.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_CYVSCROLL">
+            <summary>
+            The height of the arrow bitmap on a vertical scroll bar, in pixels.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_CYVTHUMB">
+            <summary>
+            The height of the thumb box in a vertical scroll bar, in pixels.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_DBCSENABLED">
+            <summary>
+            Nonzero if User32.dll supports DBCS; otherwise, 0.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_DEBUG">
+            <summary>
+            Nonzero if the debug version of User.exe is installed; otherwise, 0.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_DIGITIZER">
+            <summary>
+            Nonzero if the current operating system is Windows 7 or Windows Server 2008 R2 and the Tablet PC Input 
+            service is started; otherwise, 0. The return value is a bitmask that specifies the type of digitizer input supported by the device. 
+            For more information, see Remarks. 
+            Windows Server 2008, Windows Vista, and Windows XP/2000:  This value is not supported.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_IMMENABLED">
+            <summary>
+            Nonzero if Input Method Manager/Input Method Editor features are enabled; otherwise, 0. 
+            SM_IMMENABLED indicates whether the system is ready to use a Unicode-based IME on a Unicode application. 
+            To ensure that a language-dependent IME works, check SM_DBCSENABLED and the system ANSI code page.
+            Otherwise the ANSI-to-Unicode conversion may not be performed correctly, or some components like fonts
+            or registry settings may not be present.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_MAXIMUMTOUCHES">
+            <summary>
+            Nonzero if there are digitizers in the system; otherwise, 0. SM_MAXIMUMTOUCHES returns the aggregate maximum of the 
+            maximum number of contacts supported by every digitizer in the system. If the system has only single-touch digitizers, 
+            the return value is 1. If the system has multi-touch digitizers, the return value is the number of simultaneous contacts 
+            the hardware can provide. Windows Server 2008, Windows Vista, and Windows XP/2000:  This value is not supported.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_MEDIACENTER">
+            <summary>
+            Nonzero if the current operating system is the Windows XP, Media Center Edition, 0 if not.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_MENUDROPALIGNMENT">
+            <summary>
+            Nonzero if drop-down menus are right-aligned with the corresponding menu-bar item; 0 if the menus are left-aligned.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_MIDEASTENABLED">
+            <summary>
+            Nonzero if the system is enabled for Hebrew and Arabic languages, 0 if not.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_MOUSEPRESENT">
+            <summary>
+            Nonzero if a mouse is installed; otherwise, 0. This value is rarely zero, because of support for virtual mice and because 
+            some systems detect the presence of the port instead of the presence of a mouse.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_MOUSEHORIZONTALWHEELPRESENT">
+            <summary>
+            Nonzero if a mouse with a horizontal scroll wheel is installed; otherwise 0.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_MOUSEWHEELPRESENT">
+            <summary>
+            Nonzero if a mouse with a vertical scroll wheel is installed; otherwise 0.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_NETWORK">
+            <summary>
+            The least significant bit is set if a network is present; otherwise, it is cleared. The other bits are reserved for future use.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_PENWINDOWS">
+            <summary>
+            Nonzero if the Microsoft Windows for Pen computing extensions are installed; zero otherwise.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_REMOTECONTROL">
+            <summary>
+            This system metric is used in a Terminal Services environment to determine if the current Terminal Server session is 
+            being remotely controlled. Its value is nonzero if the current session is remotely controlled; otherwise, 0. 
+            You can use terminal services management tools such as Terminal Services Manager (tsadmin.msc) and shadow.exe to 
+            control a remote session. When a session is being remotely controlled, another user can view the contents of that session 
+            and potentially interact with it.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_REMOTESESSION">
+            <summary>
+            This system metric is used in a Terminal Services environment. If the calling process is associated with a Terminal Services 
+            client session, the return value is nonzero. If the calling process is associated with the Terminal Services console session, 
+            the return value is 0. 
+            Windows Server 2003 and Windows XP:  The console session is not necessarily the physical console. 
+            For more information, seeWTSGetActiveConsoleSessionId.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_SAMEDISPLAYFORMAT">
+            <summary>
+            Nonzero if all the display monitors have the same color format, otherwise, 0. Two displays can have the same bit depth, 
+            but different color formats. For example, the red, green, and blue pixels can be encoded with different numbers of bits, 
+            or those bits can be located in different places in a pixel color value.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_SECURE">
+            <summary>
+            This system metric should be ignored; it always returns 0.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_SERVERR2">
+            <summary>
+            The build number if the system is Windows Server 2003 R2; otherwise, 0.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_SHOWSOUNDS">
+            <summary>
+            Nonzero if the user requires an application to present information visually in situations where it would otherwise present 
+            the information only in audible form; otherwise, 0.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_SHUTTINGDOWN">
+            <summary>
+            Nonzero if the current session is shutting down; otherwise, 0. Windows 2000:  This value is not supported.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_SLOWMACHINE">
+            <summary>
+            Nonzero if the computer has a low-end (slow) processor; otherwise, 0.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_STARTER">
+            <summary>
+            Nonzero if the current operating system is Windows 7 Starter Edition, Windows Vista Starter, or Windows XP Starter Edition; otherwise, 0.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_SWAPBUTTON">
+            <summary>
+            Nonzero if the meanings of the left and right mouse buttons are swapped; otherwise, 0.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_TABLETPC">
+            <summary>
+            Nonzero if the current operating system is the Windows XP Tablet PC edition or if the current operating system is Windows Vista
+            or Windows 7 and the Tablet PC Input service is started; otherwise, 0. The SM_DIGITIZER setting indicates the type of digitizer 
+            input supported by a device running Windows 7 or Windows Server 2008 R2. For more information, see Remarks.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_XVIRTUALSCREEN">
+            <summary>
+            The coordinates for the left side of the virtual screen. The virtual screen is the bounding rectangle of all display monitors. 
+            The SM_CXVIRTUALSCREEN metric is the width of the virtual screen.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.PlatformInvoke.SystemMetric.SM_YVIRTUALSCREEN">
+            <summary>
+            The coordinates for the top of the virtual screen. The virtual screen is the bounding rectangle of all display monitors. 
+            The SM_CYVIRTUALSCREEN metric is the height of the virtual screen.
+            </summary>
+        </member>
+        <member name="T:Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExtendedMessageBoxButtons">
+            <summary>Specifies the button layout in the <see cref="T:Krypton.Toolkit.Suite.Extended.Developer.Utilities.KryptonMessageBoxExtended"/>.</summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExtendedMessageBoxButtons.CUSTOM">
+            <summary>Defines a custom button layout. Linked to <see cref="T:Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExtendedMessageBoxCustomButtonOptions"/> values.</summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExtendedMessageBoxButtons.OK">
+            <summary>Defines a 'OK' button only.</summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExtendedMessageBoxButtons.OKCANCEL">
+            <summary>Defines both 'OK' and 'Cancel' buttons.</summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExtendedMessageBoxButtons.ABORTRETRYIGNORE">
+            <summary>Defines 'Abort', 'Retry' and 'Ignore' buttons.</summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExtendedMessageBoxButtons.YESNOCANCEL">
+            <summary>Defines 'Yes', 'No' and 'Cancel' buttons.</summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExtendedMessageBoxButtons.YESNO">
+            <summary>Defines both 'Yes' and 'No' buttons.</summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExtendedMessageBoxButtons.RETRYCANCEL">
+            <summary>Defines both 'Retry' and 'Cancel' buttons.</summary>
+        </member>
+        <member name="T:Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExtendedMessageBoxIcon">
+            <summary>Specifies an icon for the <see cref="T:Krypton.Toolkit.Suite.Extended.Developer.Utilities.KryptonMessageBoxExtended"/>.</summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExtendedMessageBoxIcon.CUSTOM">
+            <summary>Specify a custom icon.</summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExtendedMessageBoxIcon.NONE">
+            <summary>Specify no icon.</summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExtendedMessageBoxIcon.HAND">
+            <summary>Specify a hand icon.</summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExtendedMessageBoxIcon.QUESTION">
+            <summary>Specify a question icon.</summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExtendedMessageBoxIcon.EXCLAMATION">
+            <summary>Specify a exclamation icon.</summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExtendedMessageBoxIcon.ASTERISK">
+            <summary>Specify a asterisk icon.</summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExtendedMessageBoxIcon.STOP">
+            <summary>Specify a stop icon.</summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExtendedMessageBoxIcon.ERROR">
+            <summary>Specify a error icon.</summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExtendedMessageBoxIcon.WARNING">
+            <summary>Specify a warning icon.</summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExtendedMessageBoxIcon.INFORMATION">
+            <summary>Specify a information icon.</summary>
+        </member>
+        <member name="T:Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExtendedMessageBoxCustomButtonOptions">
+            <summary>Specifies a custom button layout.</summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExtendedMessageBoxCustomButtonOptions.NONE">
+            <summary>Do not use custom buttons, instead default to an 'OK' only button.</summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExtendedMessageBoxCustomButtonOptions.ONEBUTTON">
+            <summary>Use a one button layout.</summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExtendedMessageBoxCustomButtonOptions.TWOBUTTONS">
+            <summary>Use a two button layout.</summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Developer.Utilities.ExtendedMessageBoxCustomButtonOptions.THREEBUTTONS">
+            <summary>Use a three button layout.</summary>
+        </member>
+        <member name="T:Krypton.Toolkit.Suite.Extended.Developer.Utilities.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Krypton.Toolkit.Suite.Extended.Developer.Utilities.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Krypton.Toolkit.Suite.Extended.Developer.Utilities.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Krypton.Toolkit.Suite.Extended.Developer.Utilities.Properties.Resources.Critical_32_x_32">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Krypton.Toolkit.Suite.Extended.Developer.Utilities.Properties.Resources.Hand_32_x_32">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Krypton.Toolkit.Suite.Extended.Developer.Utilities.Properties.Resources.Information_32_x_32">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Krypton.Toolkit.Suite.Extended.Developer.Utilities.Properties.Resources.Ok_32_x_32">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Krypton.Toolkit.Suite.Extended.Developer.Utilities.Properties.Resources.Question_32_x_32">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Krypton.Toolkit.Suite.Extended.Developer.Utilities.Properties.Resources.Stop_32_x_32">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Krypton.Toolkit.Suite.Extended.Developer.Utilities.Properties.Resources.UnderConstruction">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Krypton.Toolkit.Suite.Extended.Developer.Utilities.Properties.Resources.Warning_32_x_32">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,160 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Krypton.Toolkit.Suite.Extended.Effects</name>
+    </assembly>
+    <members>
+        <member name="T:Krypton.Toolkit.Suite.Extended.Effects.FadeController">
+            <summary>Handles the fading effects. Original library: (https://gist.github.com/nathan-fiscaletti/3c0514862fe88b5664b10444e1098778)</summary>
+        </member>
+        <member name="M:Krypton.Toolkit.Suite.Extended.Effects.FadeController.#ctor(Krypton.Toolkit.KryptonForm)">
+            <summary>
+            Construct the FadeController object with a form.
+            </summary>
+        </member>
+        <member name="M:Krypton.Toolkit.Suite.Extended.Effects.FadeController.#ctor(Krypton.Toolkit.KryptonForm,Krypton.Toolkit.KryptonForm)">
+            <summary>
+            Construct a FadeController object with a form and a parent form.
+            </summary>
+        </member>
+        <member name="M:Krypton.Toolkit.Suite.Extended.Effects.FadeController.BeginFade">
+            <summary>
+            Begin fading the form.
+            </summary>
+        </member>
+        <member name="M:Krypton.Toolkit.Suite.Extended.Effects.FadeController.UpdateOpacity">
+            <summary>
+            Update the opacity of the form using the timer.
+            </summary>
+        </member>
+        <member name="M:Krypton.Toolkit.Suite.Extended.Effects.FadeController.ShowDialog(System.Single,Krypton.Toolkit.Suite.Extended.Effects.FadeController.FadeCompleted)">
+            <summary>
+            Fade the form in at the defined speed as a dialog
+            based on parent form.
+            </summary>
+        </member>
+        <member name="M:Krypton.Toolkit.Suite.Extended.Effects.FadeController.FadeIn(System.Single,Krypton.Toolkit.Suite.Extended.Effects.FadeController.FadeCompleted)">
+            <summary>
+            Fade the form in at the defined speed.
+            </summary>
+        </member>
+        <member name="M:Krypton.Toolkit.Suite.Extended.Effects.FadeController.FadeOut(System.Single,Krypton.Toolkit.Suite.Extended.Effects.FadeController.FadeCompleted)">
+            <summary>
+            Fade the form out at the defined speed.
+            </summary>
+        </member>
+        <member name="M:Krypton.Toolkit.Suite.Extended.Effects.FadeController.ShowDialog(Krypton.Toolkit.KryptonForm,Krypton.Toolkit.KryptonForm,System.Single)">
+            <summary>
+            Fades a dialog in using parent form and defined fade speed.
+            </summary>
+        </member>
+        <member name="M:Krypton.Toolkit.Suite.Extended.Effects.FadeController.ShowDialog(Krypton.Toolkit.KryptonForm,Krypton.Toolkit.KryptonForm,System.Single,Krypton.Toolkit.Suite.Extended.Effects.FadeController.FadeCompleted)">
+            <summary>
+            Fades a dialog in using parent form and defined fade speed
+            and call the finished delegate.)
+            </summary>
+        </member>
+        <member name="M:Krypton.Toolkit.Suite.Extended.Effects.FadeController.FadeIn(Krypton.Toolkit.KryptonForm,System.Single,Krypton.Toolkit.Suite.Extended.Effects.FadeController.FadeCompleted)">
+            <summary>
+            Fade a form in at the defined speed.
+            </summary>
+        </member>
+        <member name="M:Krypton.Toolkit.Suite.Extended.Effects.FadeController.FadeOut(Krypton.Toolkit.KryptonForm,System.Single,Krypton.Toolkit.Suite.Extended.Effects.FadeController.FadeCompleted)">
+            <summary>
+            Fade a form out at the defined speed.
+            </summary>
+        </member>
+        <member name="M:Krypton.Toolkit.Suite.Extended.Effects.FadeController.FadeIn(Krypton.Toolkit.KryptonForm,System.Single)">
+            <summary>
+            Fade a form in at the defined speed.
+            </summary>
+        </member>
+        <member name="M:Krypton.Toolkit.Suite.Extended.Effects.FadeController.FadeOut(Krypton.Toolkit.KryptonForm,System.Single)">
+            <summary>
+            Fade a form out at the defined speed.
+            </summary>
+        </member>
+        <member name="M:Krypton.Toolkit.Suite.Extended.Effects.FadeController.FadeOutAndClose(Krypton.Toolkit.KryptonForm,System.Single)">
+            <summary>
+            Fade a form out at the defined speed and
+            close it when the fade has completed.
+            </summary>
+        </member>
+        <member name="M:Krypton.Toolkit.Suite.Extended.Effects.FadeController.FadeOutAndClose(Krypton.Toolkit.KryptonForm,System.Single,Krypton.Toolkit.Suite.Extended.Effects.FadeController.FadeCompleted)">
+            <summary>
+            Fade a form out at the defined speed and
+            close it when the fade has completed.
+            After the form has closed, call the FadeComplete delegate.
+            </summary>
+        </member>
+        <member name="M:Krypton.Toolkit.Suite.Extended.Effects.FadeControllerNETCoreSafe.FadeWindowIn(Krypton.Toolkit.KryptonForm)">
+            <summary>Fades the window in. Credit: https://stackoverflow.com/questions/12497826/better-algorithm-to-fade-a-winform.</summary>
+            <param name="owner">The owner.</param>
+        </member>
+        <member name="M:Krypton.Toolkit.Suite.Extended.Effects.FadeControllerNETCoreSafe.FadeWindowOut(Krypton.Toolkit.KryptonForm,Krypton.Toolkit.KryptonForm)">
+            <summary>Fades the window out. Credit: https://stackoverflow.com/questions/12497826/better-algorithm-to-fade-a-winform.</summary>
+            <param name="owner">The owner.</param>
+            <param name="nextWindow">The next window.</param>
+        </member>
+        <member name="M:Krypton.Toolkit.Suite.Extended.Effects.FadeManager.#ctor">
+            <summary>Initializes a new instance of the <see cref="T:Krypton.Toolkit.Suite.Extended.Effects.FadeManager" /> class.</summary>
+        </member>
+        <member name="M:Krypton.Toolkit.Suite.Extended.Effects.FadeManager.FadeIn">
+            <summary>Fades the window in.</summary>
+        </member>
+        <member name="M:Krypton.Toolkit.Suite.Extended.Effects.FadeManager.FadeOut">
+            <summary>Fades the window out.</summary>
+        </member>
+        <member name="M:Krypton.Toolkit.Suite.Extended.Effects.FadeManager.FadeOutAndClose">
+            <summary>Fades the window out and close.</summary>
+        </member>
+        <member name="M:Krypton.Toolkit.Suite.Extended.Effects.FadeManager.FadeDialog">
+            <summary>Fades the dialog.</summary>
+        </member>
+        <member name="T:Krypton.Toolkit.Suite.Extended.Effects.FadeSpeedChoice">
+            <summary>
+            Chooses the fading speed of a <see cref="T:Krypton.Toolkit.KryptonForm"/>
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Effects.FadeSpeedChoice.Slowest">
+            <summary>
+            Use the slowest fade speed possible. This is tied to the corresponding float value in <see cref="T:Krypton.Toolkit.Suite.Extended.Effects.FadeSpeed"/>, which is 1.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Effects.FadeSpeedChoice.Slower">
+            <summary>
+            Use the second slowest fade speed possible. This is tied to the corresponding float value in <see cref="T:Krypton.Toolkit.Suite.Extended.Effects.FadeSpeed"/>, which is 10.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Effects.FadeSpeedChoice.Slow">
+            <summary>
+            Use the third slowest fade speed possible. This is tied to the corresponding float value in <see cref="T:Krypton.Toolkit.Suite.Extended.Effects.FadeSpeed"/>, which is 25.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Effects.FadeSpeedChoice.Normal">
+            <summary>
+            Use a normal fade speed. This is tied to the corresponding float value in <see cref="T:Krypton.Toolkit.Suite.Extended.Effects.FadeSpeed"/>, which is 50.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Effects.FadeSpeedChoice.Fast">
+            <summary>
+            Use a fast fading speed. This is tied to the corresponding float value in <see cref="T:Krypton.Toolkit.Suite.Extended.Effects.FadeSpeed"/>, which is 60.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Effects.FadeSpeedChoice.Faster">
+            <summary>
+            Use a slightly faster fading speed. This is tied to the corresponding float value in <see cref="T:Krypton.Toolkit.Suite.Extended.Effects.FadeSpeed"/>, which is 75.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Effects.FadeSpeedChoice.Fastest">
+            <summary>
+            Use the fastest fading speed possible. This is tied to the corresponding float value in <see cref="T:Krypton.Toolkit.Suite.Extended.Effects.FadeSpeed"/>, which is 100.
+            </summary>
+        </member>
+        <member name="F:Krypton.Toolkit.Suite.Extended.Effects.FadeSpeedChoice.Custom">
+            <summary>
+            Define your own fading speed.
+            </summary>
+        </member>
+    </members>
+</doc>

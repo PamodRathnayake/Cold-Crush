@@ -1,0 +1,221 @@
+C:\Users\shazna salman\source\repos\trial\trial\obj\Debug\trial.csproj.AssemblyReference.cache
+C:\Users\shazna salman\source\repos\trial\trial\obj\Debug\trial.csproj.SuggestedBindingRedirects.cache
+C:\Users\shazna salman\source\repos\trial\trial\obj\Debug\trial.contact.resources
+C:\Users\shazna salman\source\repos\trial\trial\obj\Debug\trial.Delivery.resources
+C:\Users\shazna salman\source\repos\trial\trial\obj\Debug\trial.Welcome.resources
+C:\Users\shazna salman\source\repos\trial\trial\obj\Debug\trial.Login.resources
+C:\Users\shazna salman\source\repos\trial\trial\obj\Debug\trial.Main.resources
+C:\Users\shazna salman\source\repos\trial\trial\obj\Debug\trial.EmployeeCreate.resources
+C:\Users\shazna salman\source\repos\trial\trial\obj\Debug\trial.EmployeeLogin.resources
+C:\Users\shazna salman\source\repos\trial\trial\obj\Debug\trial.home.resources
+C:\Users\shazna salman\source\repos\trial\trial\obj\Debug\trial.Hot.resources
+C:\Users\shazna salman\source\repos\trial\trial\obj\Debug\trial.Iced.resources
+C:\Users\shazna salman\source\repos\trial\trial\obj\Debug\trial.Milkshake.resources
+C:\Users\shazna salman\source\repos\trial\trial\obj\Debug\trial.Properties.Resources.resources
+C:\Users\shazna salman\source\repos\trial\trial\obj\Debug\trial.Snacks.resources
+C:\Users\shazna salman\source\repos\trial\trial\obj\Debug\trial.csproj.GenerateResource.cache
+C:\Users\shazna salman\source\repos\trial\trial\obj\Debug\trial.csproj.CoreCompileInputs.cache
+C:\Users\shazna salman\source\repos\trial\trial\bin\Debug\trial.exe.config
+C:\Users\shazna salman\source\repos\trial\trial\bin\Debug\trial.exe
+C:\Users\shazna salman\source\repos\trial\trial\bin\Debug\trial.pdb
+C:\Users\shazna salman\source\repos\trial\trial\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\shazna salman\source\repos\trial\trial\bin\Debug\Google.Protobuf.dll
+C:\Users\shazna salman\source\repos\trial\trial\bin\Debug\Guna.UI2.dll
+C:\Users\shazna salman\source\repos\trial\trial\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\shazna salman\source\repos\trial\trial\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\shazna salman\source\repos\trial\trial\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\shazna salman\source\repos\trial\trial\bin\Debug\Krypton.Toolkit.dll
+C:\Users\shazna salman\source\repos\trial\trial\bin\Debug\Krypton.Toolkit.Suite.Extended.Common.dll
+C:\Users\shazna salman\source\repos\trial\trial\bin\Debug\Krypton.Toolkit.Suite.Extended.Developer.Utilities.dll
+C:\Users\shazna salman\source\repos\trial\trial\bin\Debug\Krypton.Toolkit.Suite.Extended.Effects.dll
+C:\Users\shazna salman\source\repos\trial\trial\bin\Debug\Krypton.Toolkit.Suite.Extended.Tools.dll
+C:\Users\shazna salman\source\repos\trial\trial\bin\Debug\Microsoft.WindowsAPICodePack.Core.dll
+C:\Users\shazna salman\source\repos\trial\trial\bin\Debug\Microsoft.WindowsAPICodePack.Shell.dll
+C:\Users\shazna salman\source\repos\trial\trial\bin\Debug\MySql.Data.dll
+C:\Users\shazna salman\source\repos\trial\trial\bin\Debug\MySqlConnector.dll
+C:\Users\shazna salman\source\repos\trial\trial\bin\Debug\System.Buffers.dll
+C:\Users\shazna salman\source\repos\trial\trial\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\shazna salman\source\repos\trial\trial\bin\Debug\System.Memory.dll
+C:\Users\shazna salman\source\repos\trial\trial\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\shazna salman\source\repos\trial\trial\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\shazna salman\source\repos\trial\trial\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\shazna salman\source\repos\trial\trial\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\shazna salman\source\repos\trial\trial\bin\Debug\ZstdNet.dll
+C:\Users\shazna salman\source\repos\trial\trial\bin\Debug\BouncyCastle.Crypto.xml
+C:\Users\shazna salman\source\repos\trial\trial\bin\Debug\Google.Protobuf.pdb
+C:\Users\shazna salman\source\repos\trial\trial\bin\Debug\Google.Protobuf.xml
+C:\Users\shazna salman\source\repos\trial\trial\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\shazna salman\source\repos\trial\trial\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\shazna salman\source\repos\trial\trial\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\shazna salman\source\repos\trial\trial\bin\Debug\Krypton.Toolkit.xml
+C:\Users\shazna salman\source\repos\trial\trial\bin\Debug\Krypton.Toolkit.Suite.Extended.Common.xml
+C:\Users\shazna salman\source\repos\trial\trial\bin\Debug\Krypton.Toolkit.Suite.Extended.Developer.Utilities.xml
+C:\Users\shazna salman\source\repos\trial\trial\bin\Debug\Krypton.Toolkit.Suite.Extended.Effects.xml
+C:\Users\shazna salman\source\repos\trial\trial\bin\Debug\Krypton.Toolkit.Suite.Extended.Tools.xml
+C:\Users\shazna salman\source\repos\trial\trial\bin\Debug\MySql.Data.xml
+C:\Users\shazna salman\source\repos\trial\trial\bin\Debug\MySqlConnector.xml
+C:\Users\shazna salman\source\repos\trial\trial\bin\Debug\System.Buffers.xml
+C:\Users\shazna salman\source\repos\trial\trial\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\shazna salman\source\repos\trial\trial\bin\Debug\System.Memory.xml
+C:\Users\shazna salman\source\repos\trial\trial\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\shazna salman\source\repos\trial\trial\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\shazna salman\source\repos\trial\trial\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\shazna salman\source\repos\trial\trial\obj\Debug\trial.csproj.CopyComplete
+C:\Users\shazna salman\source\repos\trial\trial\obj\Debug\trial.exe
+C:\Users\shazna salman\source\repos\trial\trial\obj\Debug\trial.pdb
+C:\Users\shazna salman\source\repos\trial\trial\obj\Debug\trial.cart.resources
+C:\Users\shazna salman\source\repos\trial\trial\obj\Debug\trial.cartA.resources
+C:\Users\shazna salman\source\repos\trial\trial\obj\Debug\trial.Products.resources
+C:\Users\shazna salman\source\repos\trial\trial\obj\Debug\trial.StaffMain.resources
+C:\Users\shazna salman\source\repos\trial\trial\obj\Debug\trial.Form10.resources
+C:\Users\shazna salman\source\repos\trial\trial\obj\Debug\trial.ProductUpdate.resources
+C:\Users\shazna salman\source\repos\trial\trial\obj\Debug\trial.createAcc.resources
+C:\Users\shazna salman\source\repos\trial\trial\obj\Debug\trial.CusCreate.resources
+C:\Users\shazna salman\Desktop\cw\trial\trial\bin\Debug\trial.exe.config
+C:\Users\shazna salman\Desktop\cw\trial\trial\bin\Debug\trial.exe
+C:\Users\shazna salman\Desktop\cw\trial\trial\bin\Debug\trial.pdb
+C:\Users\shazna salman\Desktop\cw\trial\trial\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\shazna salman\Desktop\cw\trial\trial\bin\Debug\Google.Protobuf.dll
+C:\Users\shazna salman\Desktop\cw\trial\trial\bin\Debug\Guna.UI2.dll
+C:\Users\shazna salman\Desktop\cw\trial\trial\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\shazna salman\Desktop\cw\trial\trial\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\shazna salman\Desktop\cw\trial\trial\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\shazna salman\Desktop\cw\trial\trial\bin\Debug\Krypton.Toolkit.dll
+C:\Users\shazna salman\Desktop\cw\trial\trial\bin\Debug\Krypton.Toolkit.Suite.Extended.Common.dll
+C:\Users\shazna salman\Desktop\cw\trial\trial\bin\Debug\Krypton.Toolkit.Suite.Extended.Developer.Utilities.dll
+C:\Users\shazna salman\Desktop\cw\trial\trial\bin\Debug\Krypton.Toolkit.Suite.Extended.Effects.dll
+C:\Users\shazna salman\Desktop\cw\trial\trial\bin\Debug\Krypton.Toolkit.Suite.Extended.Tools.dll
+C:\Users\shazna salman\Desktop\cw\trial\trial\bin\Debug\Microsoft.WindowsAPICodePack.Core.dll
+C:\Users\shazna salman\Desktop\cw\trial\trial\bin\Debug\Microsoft.WindowsAPICodePack.Shell.dll
+C:\Users\shazna salman\Desktop\cw\trial\trial\bin\Debug\MySql.Data.dll
+C:\Users\shazna salman\Desktop\cw\trial\trial\bin\Debug\MySqlConnector.dll
+C:\Users\shazna salman\Desktop\cw\trial\trial\bin\Debug\System.Buffers.dll
+C:\Users\shazna salman\Desktop\cw\trial\trial\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\shazna salman\Desktop\cw\trial\trial\bin\Debug\System.Memory.dll
+C:\Users\shazna salman\Desktop\cw\trial\trial\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\shazna salman\Desktop\cw\trial\trial\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\shazna salman\Desktop\cw\trial\trial\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\shazna salman\Desktop\cw\trial\trial\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\shazna salman\Desktop\cw\trial\trial\bin\Debug\ZstdNet.dll
+C:\Users\shazna salman\Desktop\cw\trial\trial\bin\Debug\BouncyCastle.Crypto.xml
+C:\Users\shazna salman\Desktop\cw\trial\trial\bin\Debug\Google.Protobuf.pdb
+C:\Users\shazna salman\Desktop\cw\trial\trial\bin\Debug\Google.Protobuf.xml
+C:\Users\shazna salman\Desktop\cw\trial\trial\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\shazna salman\Desktop\cw\trial\trial\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\shazna salman\Desktop\cw\trial\trial\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\shazna salman\Desktop\cw\trial\trial\bin\Debug\Krypton.Toolkit.xml
+C:\Users\shazna salman\Desktop\cw\trial\trial\bin\Debug\Krypton.Toolkit.Suite.Extended.Common.xml
+C:\Users\shazna salman\Desktop\cw\trial\trial\bin\Debug\Krypton.Toolkit.Suite.Extended.Developer.Utilities.xml
+C:\Users\shazna salman\Desktop\cw\trial\trial\bin\Debug\Krypton.Toolkit.Suite.Extended.Effects.xml
+C:\Users\shazna salman\Desktop\cw\trial\trial\bin\Debug\Krypton.Toolkit.Suite.Extended.Tools.xml
+C:\Users\shazna salman\Desktop\cw\trial\trial\bin\Debug\MySql.Data.xml
+C:\Users\shazna salman\Desktop\cw\trial\trial\bin\Debug\MySqlConnector.xml
+C:\Users\shazna salman\Desktop\cw\trial\trial\bin\Debug\System.Buffers.xml
+C:\Users\shazna salman\Desktop\cw\trial\trial\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\shazna salman\Desktop\cw\trial\trial\bin\Debug\System.Memory.xml
+C:\Users\shazna salman\Desktop\cw\trial\trial\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\shazna salman\Desktop\cw\trial\trial\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\shazna salman\Desktop\cw\trial\trial\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\shazna salman\Desktop\cw\trial\trial\obj\Debug\trial.csproj.AssemblyReference.cache
+C:\Users\shazna salman\Desktop\cw\trial\trial\obj\Debug\trial.csproj.SuggestedBindingRedirects.cache
+C:\Users\shazna salman\Desktop\cw\trial\trial\obj\Debug\trial.cart.resources
+C:\Users\shazna salman\Desktop\cw\trial\trial\obj\Debug\trial.contact.resources
+C:\Users\shazna salman\Desktop\cw\trial\trial\obj\Debug\trial.createAcc.resources
+C:\Users\shazna salman\Desktop\cw\trial\trial\obj\Debug\trial.Delivery.resources
+C:\Users\shazna salman\Desktop\cw\trial\trial\obj\Debug\trial.Welcome.resources
+C:\Users\shazna salman\Desktop\cw\trial\trial\obj\Debug\trial.Login.resources
+C:\Users\shazna salman\Desktop\cw\trial\trial\obj\Debug\trial.Main.resources
+C:\Users\shazna salman\Desktop\cw\trial\trial\obj\Debug\trial.EmployeeCreate.resources
+C:\Users\shazna salman\Desktop\cw\trial\trial\obj\Debug\trial.EmployeeLogin.resources
+C:\Users\shazna salman\Desktop\cw\trial\trial\obj\Debug\trial.cartA.resources
+C:\Users\shazna salman\Desktop\cw\trial\trial\obj\Debug\trial.StaffMain.resources
+C:\Users\shazna salman\Desktop\cw\trial\trial\obj\Debug\trial.ProductUpdate.resources
+C:\Users\shazna salman\Desktop\cw\trial\trial\obj\Debug\trial.Products.resources
+C:\Users\shazna salman\Desktop\cw\trial\trial\obj\Debug\trial.home.resources
+C:\Users\shazna salman\Desktop\cw\trial\trial\obj\Debug\trial.Hot.resources
+C:\Users\shazna salman\Desktop\cw\trial\trial\obj\Debug\trial.Iced.resources
+C:\Users\shazna salman\Desktop\cw\trial\trial\obj\Debug\trial.Milkshake.resources
+C:\Users\shazna salman\Desktop\cw\trial\trial\obj\Debug\trial.Properties.Resources.resources
+C:\Users\shazna salman\Desktop\cw\trial\trial\obj\Debug\trial.Snacks.resources
+C:\Users\shazna salman\Desktop\cw\trial\trial\obj\Debug\trial.csproj.GenerateResource.cache
+C:\Users\shazna salman\Desktop\cw\trial\trial\obj\Debug\trial.csproj.CoreCompileInputs.cache
+C:\Users\shazna salman\Desktop\cw\trial\trial\obj\Debug\trial.csproj.CopyComplete
+C:\Users\shazna salman\Desktop\cw\trial\trial\obj\Debug\trial.exe
+C:\Users\shazna salman\Desktop\cw\trial\trial\obj\Debug\trial.pdb
+C:\Users\shazna salman\Desktop\cw\trial\trial\obj\Debug\trial.ProdDet.resources
+C:\Users\shazna salman\Desktop\cw\trial\trial\obj\Debug\trial.CusDet.resources
+C:\Users\shazna salman\Desktop\cw\trial\trial\obj\Debug\trial.StaffContact.resources
+C:\Users\shazna salman\Desktop\GUI CW\trial\trial\bin\Debug\trial.exe.config
+C:\Users\shazna salman\Desktop\GUI CW\trial\trial\bin\Debug\trial.exe
+C:\Users\shazna salman\Desktop\GUI CW\trial\trial\bin\Debug\trial.pdb
+C:\Users\shazna salman\Desktop\GUI CW\trial\trial\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\shazna salman\Desktop\GUI CW\trial\trial\bin\Debug\Google.Protobuf.dll
+C:\Users\shazna salman\Desktop\GUI CW\trial\trial\bin\Debug\Guna.UI2.dll
+C:\Users\shazna salman\Desktop\GUI CW\trial\trial\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\shazna salman\Desktop\GUI CW\trial\trial\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\shazna salman\Desktop\GUI CW\trial\trial\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\shazna salman\Desktop\GUI CW\trial\trial\bin\Debug\Krypton.Toolkit.dll
+C:\Users\shazna salman\Desktop\GUI CW\trial\trial\bin\Debug\Krypton.Toolkit.Suite.Extended.Common.dll
+C:\Users\shazna salman\Desktop\GUI CW\trial\trial\bin\Debug\Krypton.Toolkit.Suite.Extended.Developer.Utilities.dll
+C:\Users\shazna salman\Desktop\GUI CW\trial\trial\bin\Debug\Krypton.Toolkit.Suite.Extended.Effects.dll
+C:\Users\shazna salman\Desktop\GUI CW\trial\trial\bin\Debug\Krypton.Toolkit.Suite.Extended.Tools.dll
+C:\Users\shazna salman\Desktop\GUI CW\trial\trial\bin\Debug\Microsoft.WindowsAPICodePack.Core.dll
+C:\Users\shazna salman\Desktop\GUI CW\trial\trial\bin\Debug\Microsoft.WindowsAPICodePack.Shell.dll
+C:\Users\shazna salman\Desktop\GUI CW\trial\trial\bin\Debug\MySql.Data.dll
+C:\Users\shazna salman\Desktop\GUI CW\trial\trial\bin\Debug\MySqlConnector.dll
+C:\Users\shazna salman\Desktop\GUI CW\trial\trial\bin\Debug\System.Buffers.dll
+C:\Users\shazna salman\Desktop\GUI CW\trial\trial\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\shazna salman\Desktop\GUI CW\trial\trial\bin\Debug\System.Memory.dll
+C:\Users\shazna salman\Desktop\GUI CW\trial\trial\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\shazna salman\Desktop\GUI CW\trial\trial\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\shazna salman\Desktop\GUI CW\trial\trial\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\shazna salman\Desktop\GUI CW\trial\trial\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\shazna salman\Desktop\GUI CW\trial\trial\bin\Debug\ZstdNet.dll
+C:\Users\shazna salman\Desktop\GUI CW\trial\trial\bin\Debug\BouncyCastle.Crypto.xml
+C:\Users\shazna salman\Desktop\GUI CW\trial\trial\bin\Debug\Google.Protobuf.pdb
+C:\Users\shazna salman\Desktop\GUI CW\trial\trial\bin\Debug\Google.Protobuf.xml
+C:\Users\shazna salman\Desktop\GUI CW\trial\trial\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\shazna salman\Desktop\GUI CW\trial\trial\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\shazna salman\Desktop\GUI CW\trial\trial\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\shazna salman\Desktop\GUI CW\trial\trial\bin\Debug\Krypton.Toolkit.xml
+C:\Users\shazna salman\Desktop\GUI CW\trial\trial\bin\Debug\Krypton.Toolkit.Suite.Extended.Common.xml
+C:\Users\shazna salman\Desktop\GUI CW\trial\trial\bin\Debug\Krypton.Toolkit.Suite.Extended.Developer.Utilities.xml
+C:\Users\shazna salman\Desktop\GUI CW\trial\trial\bin\Debug\Krypton.Toolkit.Suite.Extended.Effects.xml
+C:\Users\shazna salman\Desktop\GUI CW\trial\trial\bin\Debug\Krypton.Toolkit.Suite.Extended.Tools.xml
+C:\Users\shazna salman\Desktop\GUI CW\trial\trial\bin\Debug\MySql.Data.xml
+C:\Users\shazna salman\Desktop\GUI CW\trial\trial\bin\Debug\MySqlConnector.xml
+C:\Users\shazna salman\Desktop\GUI CW\trial\trial\bin\Debug\System.Buffers.xml
+C:\Users\shazna salman\Desktop\GUI CW\trial\trial\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\shazna salman\Desktop\GUI CW\trial\trial\bin\Debug\System.Memory.xml
+C:\Users\shazna salman\Desktop\GUI CW\trial\trial\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\shazna salman\Desktop\GUI CW\trial\trial\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\shazna salman\Desktop\GUI CW\trial\trial\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\shazna salman\Desktop\GUI CW\trial\trial\obj\Debug\trial.csproj.AssemblyReference.cache
+C:\Users\shazna salman\Desktop\GUI CW\trial\trial\obj\Debug\trial.csproj.SuggestedBindingRedirects.cache
+C:\Users\shazna salman\Desktop\GUI CW\trial\trial\obj\Debug\trial.cart.resources
+C:\Users\shazna salman\Desktop\GUI CW\trial\trial\obj\Debug\trial.contact.resources
+C:\Users\shazna salman\Desktop\GUI CW\trial\trial\obj\Debug\trial.createAcc.resources
+C:\Users\shazna salman\Desktop\GUI CW\trial\trial\obj\Debug\trial.Delivery.resources
+C:\Users\shazna salman\Desktop\GUI CW\trial\trial\obj\Debug\trial.Welcome.resources
+C:\Users\shazna salman\Desktop\GUI CW\trial\trial\obj\Debug\trial.ProdDet.resources
+C:\Users\shazna salman\Desktop\GUI CW\trial\trial\obj\Debug\trial.StaffContact.resources
+C:\Users\shazna salman\Desktop\GUI CW\trial\trial\obj\Debug\trial.CusDet.resources
+C:\Users\shazna salman\Desktop\GUI CW\trial\trial\obj\Debug\trial.Login.resources
+C:\Users\shazna salman\Desktop\GUI CW\trial\trial\obj\Debug\trial.Main.resources
+C:\Users\shazna salman\Desktop\GUI CW\trial\trial\obj\Debug\trial.EmployeeCreate.resources
+C:\Users\shazna salman\Desktop\GUI CW\trial\trial\obj\Debug\trial.EmployeeLogin.resources
+C:\Users\shazna salman\Desktop\GUI CW\trial\trial\obj\Debug\trial.cartA.resources
+C:\Users\shazna salman\Desktop\GUI CW\trial\trial\obj\Debug\trial.StaffMain.resources
+C:\Users\shazna salman\Desktop\GUI CW\trial\trial\obj\Debug\trial.ProductUpdate.resources
+C:\Users\shazna salman\Desktop\GUI CW\trial\trial\obj\Debug\trial.Products.resources
+C:\Users\shazna salman\Desktop\GUI CW\trial\trial\obj\Debug\trial.home.resources
+C:\Users\shazna salman\Desktop\GUI CW\trial\trial\obj\Debug\trial.Hot.resources
+C:\Users\shazna salman\Desktop\GUI CW\trial\trial\obj\Debug\trial.Iced.resources
+C:\Users\shazna salman\Desktop\GUI CW\trial\trial\obj\Debug\trial.Milkshake.resources
+C:\Users\shazna salman\Desktop\GUI CW\trial\trial\obj\Debug\trial.Properties.Resources.resources
+C:\Users\shazna salman\Desktop\GUI CW\trial\trial\obj\Debug\trial.Snacks.resources
+C:\Users\shazna salman\Desktop\GUI CW\trial\trial\obj\Debug\trial.csproj.GenerateResource.cache
+C:\Users\shazna salman\Desktop\GUI CW\trial\trial\obj\Debug\trial.csproj.CoreCompileInputs.cache
+C:\Users\shazna salman\Desktop\GUI CW\trial\trial\obj\Debug\trial.csproj.CopyComplete
+C:\Users\shazna salman\Desktop\GUI CW\trial\trial\obj\Debug\trial.exe
+C:\Users\shazna salman\Desktop\GUI CW\trial\trial\obj\Debug\trial.pdb

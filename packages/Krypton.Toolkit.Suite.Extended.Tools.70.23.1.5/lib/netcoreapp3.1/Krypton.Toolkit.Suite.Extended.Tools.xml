@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Krypton.Toolkit.Suite.Extended.Tools</name>
+    </assembly>
+    <members>
+        <member name="M:Krypton.Toolkit.Suite.Extended.Tools.MissingFrameWorkAPIs.IsNullOrWhiteSpace(System.String)">
+            <summary>
+            Optimised Framework independent replacement for string.IsNullOrWhitespace
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
